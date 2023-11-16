@@ -1,0 +1,270 @@
+/* Felles */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+:root{
+    --gullgul: #e6bd43;
+    --gråsvart: #252525;
+}
+
+/* Grid-container felles alle sider mobile*/
+.grid-container{
+    display: grid;
+    grid-template-areas:
+    "header"
+    "main"
+    "footer";
+}
+.navmeny{
+    display: grid;
+    grid-area: header;
+    overflow: hidden;
+    grid-column: 1/-1;
+}
+
+.main{
+    display: grid;
+    grid-area: main;
+    overflow: hidden;
+    grid-column: 1/-1;
+}
+
+.companyfooter{
+    display: grid;
+    grid-area: footer;
+    overflow: hidden;
+    grid-column: 1/-1;
+}
+
+/* Header nav-meny felles */
+
+.navmeny-desktop{
+    display: none;
+}
+
+.navmenyen{
+    overflow: hidden;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 4.267vw;
+}
+
+.navliste-mobile .listerekke{
+    padding: 5px 0px;
+}
+
+.navliste-mobile a{
+    text-decoration: none;
+    color: black;
+}
+
+.logo{
+    width: 21.333vw;
+}
+
+.contactknapp{
+    padding: 5.333vw 0px;
+}
+
+.yellow-btn{
+    background-color: var(--gullgul);
+    padding: 4vw;
+    font-weight: 700;
+}
+
+
+.currentlink{
+    font-weight: 700;
+    border-bottom: 3px solid var(--gullgul);
+}
+
+.backtotop-btn{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: var(--gråsvart);
+    margin: 10px;
+    padding: 15px 10px;
+    border-radius: 5px
+}
+
+.backtotop-btn .fa-arrow-up{
+    color: white;
+    text-decoration: none;
+    font-size: 5.333vw;
+    font-weight: 300;
+}
+
+/* Footer felles */
+
+.companyfooter{
+    background-color: var(--gråsvart);
+    padding: 50px 10px 30px 10px;
+    text-align: center;
+}
+
+.logocontainerfooter{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5.333vw;
+}
+
+.logofooter{
+    width: 21.333vw;
+}
+
+.footer-h2{
+    font-size: 4.267vw;
+    font-weight: 400;
+    color: white;
+}
+
+.SoMe-footer-liste li{
+    display: inline-block;
+}
+
+.SoMe-footer{
+    text-decoration: none;
+}
+
+.SoMe-footer i{
+    color: white;
+    font-size: 8vw;
+    padding: 2.667vw;
+}
+
+/* Forside */
+
+.desktopvideo{
+    display: none;
+}
+
+@media only screen and (max-width: 1600px) and (min-width: 800px){
+    /* Grid-container felles alle sider desktop */
+    .grid-container{
+        display: grid;
+        grid-template-areas:
+        "header header header"
+        "main main main"
+        "footer footer footer";
+    }
+
+    .navmeny{
+        display: grid;
+        grid-area: header;
+        overflow: hidden;
+        grid-column: 1/-1;
+    }
+
+    .main{
+        display: grid;
+        grid-area: main;
+        overflow: hidden;
+        grid-column: 1/-1;
+    }
+
+    .companyfooter{
+        display: grid;
+        grid-area: footer;
+        overflow: hidden;
+        grid-column: 1/-1;
+    }
+
+    /* Header felles */
+
+    .navliste-mobile{
+        display: none;
+    }
+
+    .navmeny-desktop{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .logo{
+        padding: 20px 10px 0px 20px;
+        width: 120px;
+    }
+
+    .navliste-desktop{
+        list-style-type: none;
+        font-size: 20px;
+        height: fit-content;
+        flex: 1;
+        text-align: right;
+        padding-right:5px;
+    }
+
+    .navliste-desktop li{
+        display: inline-block;
+        padding: 10px 15px;
+    }
+
+    .navliste-desktop a{
+        color: black;
+        text-decoration: none;
+    }
+
+    .yellow-btn{
+        padding: 15px;
+    }
+
+    .yellow-btn:hover{
+        background-color: black;
+        color: var(--gullgul);
+    }
+
+    .backtotop-btn .fa-arrow-up{
+        color: white;
+        text-decoration: none;
+        font-size: 30px;
+        font-weight: 300;
+    }
+
+    /* Footer felles */
+
+    .companyfooter{
+        background-color: var(--gråsvart);
+        padding: 50px 10px 30px 10px;
+    }
+
+    .companyfootercontainer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .logocontainerfooter{
+        display: flex;
+        padding: 10px;
+        margin: 0px;
+    }
+
+    .logofooter{
+        width: 120px;
+    }
+    
+    .footer-h2{
+        font-size: 20px;
+        font-weight: 300;
+        color: white;
+    }
+    
+    .SoMe-footer{
+        text-decoration: none;
+    }
+    
+    .SoMe-footer i{
+        color: white;
+        font-size: 40px;
+        padding: 15px;
+    }
+
+    /* Forside */
+
+}
