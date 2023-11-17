@@ -23,161 +23,162 @@
 <body>
     <div class="grid-container">
         <header class="navmeny">
-            <nav class="navmenyen">
+            <a href="#mainindex" class="skip" aria-label="Skip to main content">Skip to main content</a>
+            <nav class="navmenyen" aria-label="Main navigation" role="navigation">
                 <ul class="navliste-mobile">
-                    <li>
+                    <li class="listerekke">
                         <span class="logo-hjem">
-                            <a href="index.html" class="logo-hjem">
-                                <img src="img/logo1.png" alt="Company logo" class="logo">
+                            <a href="index.html" class="logo-hjem" aria-label="Logo with Home-button functionality">
+                                <img src="img/logo1.png" alt="Company logo" class="logo" aria-label="Company logo">
                             </a>
                         </span>
                     </li>
-                    <li>
-                        <a href="index.html">Home</a>
+                    <li class="listerekke">
+                        <a href="index.html" class="currentlink" aria-label="Go to home">Home</a>
                     </li>
-                    <li>
-                        <a href="portfolio.html" class="currentlink">Portfolio</a>
+                    <li class="listerekke">
+                        <a href="portfolio.html" aria-label="Go to portfolio">Portfolio</a>
                     </li>
-                    <li>
-                        <a href="about.html">About</a>
+                    <li class="listerekke">
+                        <a href="about.html" aria-label="Go to about us">About</a>
                     </li>
-                    <li>
-                        <a href="about.html#contactus" class="yellow-btn">Contact</a>
+                    <li class="contactknapp">
+                        <a href="about.html#contactus" class="yellow-btn" aria-label="Go to contact us">Contact</a>
                     </li>
                 </ul>
                 <section class="navmeny-desktop">
                     <span class="logo-hjem">
-                        <a href="index.html" class="logo-hjem">
-                            <img src="img/logo1.png" alt="Company logo" class="logo">
+                        <a href="index.html" class="logo-hjem" aria-label="Logo with Home-button functionality">
+                            <img src="img/logo1.png" alt="Company logo" class="logo" aria-label="Company logo">
                         </a>
                     </span>
                     <ul class="navliste-desktop">
                         <li>
-                            <a href="index.html">Home</a>
+                            <a href="index.html" class="currentlink" aria-label="Go to home">Home</a>
                         </li>
                         <li>
-                            <a href="portfolio.html" class="currentlink">Portfolio</a>
+                            <a href="portfolio.html" aria-label="Go to portfolio">Portfolio</a>
                         </li>
                         <li>
-                            <a href="about.html">About</a>
+                            <a href="about.html" aria-label="Go to about us">About</a>
                         </li>
                         <li>
-                            <a href="about.html#contactus" class="yellow-btn">Contact</a>
+                            <a href="about.html#contactus" class="yellow-btn" aria-label="Go to contact us">Contact</a>
                         </li>
                     </ul>
                 </section>
             </nav>
         </header>
-        <main class="main">
-            <a href="#top" class="backtotop-btn">
-                <i class="fa fa-arrow-up" aria-hidden="true"></i>
-            </a>
-            <section>
-                <h1>Portfolio</h1>
+        <main class="main" id="mainportfolio">
+            <section class="portfolioheader">
+                <h1 class="portfolioh1">Portfolio</h1>
             </section>
-            <section>
-                <h2>Explore previous jobs</h2>
+            <section class="previousjobs">
+                <h2 class="portfolioheading">Explore previous jobs</h2>
                 <ul class="joblist">
-                    <li>
+                    <li class="jobtype">
                         <a href="#branding" class="job-btn">Branding</a>
                     </li>
-                    <li>
+                    <li class="jobtype">
                         <a href="#design" class="job-btn">Design</a>
                     </li>
-                    <li>
-                        <a href="#developement" class="job-btn">Developement</a>
+                    <li class="jobtype">
+                        <a href="#development" class="job-btn">Development</a>
                     </li>
                 </ul>
             </section>
             <section id="branding">
-                <h2>Branding</h2>
+                <h2 class="portfolioheading">Branding</h2>
                 <ul class="artikkelliste">
                     <li>
-                        <article class="artikkelkort">
-                            <img src="img/400x400.png" alt="Placeholder image">
-                            <h3>Et harum quidem</h3>
+                        <article itemscope itemtype="http://schema.org/Article" class="artikkelkort">
+                            <img itemprop="image" src="img/400x400.png" alt="Placeholder image"/>
+                            <h3 itemprop="headline">Et harum quidem</h3>
                         </article>
                     </li>
                     <li>
-                        <article class="artikkelkort">
-                            <img src="img/400x400.png" alt="Placeholder image">
-                            <h3>Et harum quidem</h3>
+                        <article itemscope itemtype="http://schema.org/Article" class="artikkelkort">
+                            <img itemprop="image" src="img/400x400.png" alt="Placeholder image"/>
+                            <h3 itemprop="headline">Et harum quidem</h3>
                         </article>
                     </li>
                     <li>
-                        <article class="artikkelkort">
-                            <img src="img/400x400.png" alt="Placeholder image">
-                            <h3>Et harum quidem</h3>
+                        <article itemscope itemtype="http://schema.org/Article" class="artikkelkort">
+                            <img itemprop="image" src="img/400x400.png" alt="Placeholder image"/>
+                            <h3 itemprop="headline">Et harum quidem</h3>
                         </article>
                     </li>
                     <li>
-                        <article class="artikkelkort">
-                            <img src="img/400x400.png" alt="Placeholder image">
-                            <h3>Et harum quidem</h3>
+                        <article itemscope itemtype="http://schema.org/Article" class="artikkelkort">
+                            <img itemprop="image" src="img/400x400.png" alt="Placeholder image"/>
+                            <h3 itemprop="headline">Et harum quidem</h3>
                         </article>
                     </li>
                 </ul>
             </section>
             <section id="design">
-                <h2>Design</h2>
+                <h2 class="portfolioheading">Design</h2>
                 <ul class="artikkelliste">
                     <li>
-                        <article class="artikkelkort">
-                            <img src="img/400x400.png" alt="Placeholder image">
-                            <h3>Et harum quidem</h3>
+                        <article itemscope itemtype="http://schema.org/Article" class="artikkelkort">
+                            <img itemprop="image" src="img/400x400.png" alt="Placeholder image"/>
+                            <h3 itemprop="headline">Et harum quidem</h3>
                         </article>
                     </li>
                     <li>
-                        <article class="artikkelkort">
-                            <img src="img/400x400.png" alt="Placeholder image">
-                            <h3>Et harum quidem</h3>
+                        <article itemscope itemtype="http://schema.org/Article" class="artikkelkort">
+                            <img itemprop="image" src="img/400x400.png" alt="Placeholder image"/>
+                            <h3 itemprop="headline">Et harum quidem</h3>
                         </article>
                     </li>
                     <li>
-                        <article class="artikkelkort">
-                            <img src="img/400x400.png" alt="Placeholder image">
-                            <h3>Et harum quidem</h3>
+                        <article itemscope itemtype="http://schema.org/Article" class="artikkelkort">
+                            <img itemprop="image" src="img/400x400.png" alt="Placeholder image"/>
+                            <h3 itemprop="headline">Et harum quidem</h3>
                         </article>
                     </li>
                 </ul>
             </section>
-            <section id="developement">
-                <h2>Developement</h2>
+            <section id="development">
+                <h2 class="portfolioheading">Development</h2>
                 <ul class="artikkelliste">
                     <li>
-                        <article class="artikkelkort">
-                            <img src="img/400x400.png" alt="Placeholder image">
-                            <h3>Et harum quidem</h3>
+                        <article itemscope itemtype="http://schema.org/Article" class="artikkelkort">
+                            <img itemprop="image" src="img/400x400.png" alt="Placeholder image"/>
+                            <h3 itemprop="headline">Et harum quidem</h3>
                         </article>
                     </li>
                     <li>
-                        <article class="artikkelkort">
-                            <img src="img/400x400.png" alt="Placeholder image">
-                            <h3>Et harum quidem</h3>
+                        <article itemscope itemtype="http://schema.org/Article" class="artikkelkort">
+                            <img itemprop="image" src="img/400x400.png" alt="Placeholder image"/>
+                            <h3 itemprop="headline">Et harum quidem</h3>
                         </article>
                     </li>
                 </ul>
             </section>
+            <a href="#top" class="backtotop-btn">
+                <i class="fa fa-arrow-up" aria-hidden="true"></i>
+            </a>
         </main>
         <footer class="companyfooter">
             <section class="companyfootercontainer">
                 <div class="logocontainerfooter">
-                    <img src="img/logo1.png" alt="Company logo" class="logofooter">
+                    <img src="img/logo1.png" alt="Company logo" class="logofooter" aria-label="Company logo">
                 </div>
                 <h2 class="footer-h2">Companyrights Companyname 2023</h2>
                 <ul class="SoMe-footer-liste">
                     <li>
-                        <a href="https://www.facebook.com/" class="SoMe-footer">
+                        <a href="https://www.facebook.com/" class="SoMe-footer" aria-label="Go to our Facebook">
                             <i class="fa fa-facebook-official" aria-hidden="true"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="https://www.instagram.com/" class="SoMe-footer">
+                        <a href="https://www.instagram.com/" class="SoMe-footer" aria-label="Go to our Instagram">
                             <i class="fa fa-instagram" aria-hidden="true"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="https://no.linkedin.com/" class="SoMe-footer">
+                        <a href="https://no.linkedin.com/" class="SoMe-footer" aria-label="Go to our LinkedIn">
                             <i class="fa fa-linkedin-square" aria-hidden="true"></i>
                         </a>
                     </li>
