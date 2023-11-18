@@ -413,6 +413,11 @@
         font-size: 18px;
     }
 
+    .job-btn:hover{
+        background-color: black;
+        color: var(--gullgul);
+    }
+
     /* Løsning for artikkelkortenes flex-grow og rad-oppførsel er utarbeidet med hjelp av ChatGPT */
 
     .artikkelliste{
