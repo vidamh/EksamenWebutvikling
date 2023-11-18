@@ -220,6 +220,8 @@
     flex-direction: column;
 }
 
+/* Løsning for artikkelkortenes flex-grow og rad-oppførsel er utarbeidet med hjelp av ChatGPT */
+
 .artikkelliste{
     display: flex;
     flex-wrap: wrap;
@@ -228,12 +230,19 @@
     padding-top: 4vw;
 }
 
+.artikkelliste li{
+    width: 100%;
+    flex-grow: 1;
+}
+
 .artikkelliste img{
-    width: 82.667vw;
+    width: 100%;
     padding-bottom: 4vw;
 }
 
 .artikkelkort{
+    box-sizing: border-box;
+    width: 100%;
     padding: 5.333vw 0px 5.333vw 0px;
 }
 
@@ -248,7 +257,7 @@
     display: none;
 }
 
-@media only screen and (max-width: 1600px) and (min-width: 1000px){
+@media only screen and (max-width: 1600px) and (min-width: 800px){
     /* Grid-container felles alle sider desktop */
     .grid-container{
         display: grid;
@@ -403,25 +412,30 @@
     .job-btn{
         font-size: 18px;
     }
-    
+
+    /* Løsning for artikkelkortenes flex-grow og rad-oppførsel er utarbeidet med hjelp av ChatGPT */
 
     .artikkelliste{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         max-width: 100%;
-        justify-content: left;
         padding-top: 40px;
     }
 
-    .artikkelliste img{
-        width: 40vw;
-        padding: 0px 10px 30px 10px;
+    .artikkelliste li{
+        width: calc(50% - 20px);
     }
 
+    .artikkelliste img{
+        width: 100%;
+        padding-bottom: 40px;
+    }
+    
     .artikkelkort{
-        padding: 20px 0px;
+        padding: 20px 20px;
         transition:all ease-in-out 0.8s; 
+        max-width: 692px;
     }
 
     .artikkelkort:hover{
@@ -437,18 +451,16 @@
 
 }
 
+@media only screen and (max-width: 1600px) and (min-width: 1200px){
 
-@media only screen and (max-width: 1600px) and (min-width: 1360px){
-   
-    /* Portfolio */
+    /* Løsning for artikkelkortenes flex-grow og rad-oppførsel er utarbeidet med hjelp av ChatGPT */
 
-    .artikkelliste .størrebilde{
-        width: 38.971vw;
+    .artikkelliste li {
+        width: calc(33.33% - 20px);
     }
 
-    .artikkelliste img{
-        width: 25.735vw;
-        padding: 0px 10px 30px 10px;
+    .artikkelliste li :nth-child(2n):nth-last-child(2) {
+        width: calc(50% - 20px);
     }
 
 }
