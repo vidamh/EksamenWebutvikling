@@ -153,18 +153,18 @@
     background-size: cover;
     background-blend-mode: multiply;
     width: 100%;
-    height: 300px;
+    height: 80vw;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .portfolioh1{
-    font-size: 35px;
+    font-size: 9.333vw;
 }
 
 .previousjobs{
-    padding: 10px 30px;
+    padding: 2.667vw  8vw;
     display: flex;
     justify-content: left;
     flex-direction: column;
@@ -172,22 +172,23 @@
 
 .portfolioheading{
     border-bottom: 4px solid var(--gullgul);
-    padding: 10px 10px 10px 0px;
+    padding: 2.667vw  2.667vw  2.667vw  0px;
     width: 80vw;
+    font-size: 6.400vw;
 }
 
 .joblist{
-    padding: 30px 0px 20px 0px;
+    padding: 10px 0px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    max-width: 80%;
+    max-width: 95%;
 }
 
 .jobtype{
     display: inline-block;
     list-style-type: none;
-    padding: 30px 10px 10px 0px;
+    padding: 10.667vw 2.667vw 0px 0px;
 }
 
 .job-btn{
@@ -195,24 +196,25 @@
     padding: 10px;
     text-decoration: none;
     color: black;
+    font-size: 4vw;
 }
 
 #branding{
-    padding: 10px 30px;
+    padding: 2.667vw 8vw;
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
 
 #design{
-    padding: 10px 30px;
+    padding: 2.667vw 8vw;
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
 
 #development{
-    padding: 10px 30px;
+    padding: 2.667vw 8vw;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -223,17 +225,20 @@
     flex-wrap: wrap;
     justify-content: left;
     list-style-type: none;
-    padding-top: 15px;
+    padding-top: 4vw;
 }
 
 .artikkelliste img{
-    width: 310px;
-    max-width: fit-content;
-    padding-bottom: 15px;
+    width: 82.667vw;
+    padding-bottom: 4vw;
 }
 
 .artikkelkort{
-    padding: 20px 0px 20px 0px;
+    padding: 5.333vw 0px 5.333vw 0px;
+}
+
+.artikkelkort h3{
+    font-size: 5.067vw;
 }
 
 
@@ -243,7 +248,7 @@
     display: none;
 }
 
-@media only screen and (max-width: 1600px) and (min-width: 800px){
+@media only screen and (max-width: 1600px) and (min-width: 1000px){
     /* Grid-container felles alle sider desktop */
     .grid-container{
         display: grid;
@@ -365,6 +370,85 @@
         padding: 15px;
     }
 
+    /* Portfolio */
+
+    .portfolioheader{
+        background-position-y: center;
+        height: 25.056vw;
+    }
+
+    .portfolioh1{
+        font-size:5vw;
+    }
+
+    #mainportfolio section{
+        padding-top:30px;
+        padding-bottom: 30px;
+    }
+
+    #mainportfolio .previousjobs{
+        padding-top: 40px;
+    }
+
+    .portfolioheading{
+        width: 80vw;
+        font-size: 3.125vw;
+        padding-top: 0px;
+    }
+
+    .jobtype{
+        padding: 70px 10px 0px 10px;
+    }
+
+    .job-btn{
+        font-size: 18px;
+    }
+    
+
+    .artikkelliste{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: 100%;
+        justify-content: left;
+        padding-top: 40px;
+    }
+
+    .artikkelliste img{
+        width: 40vw;
+        padding: 0px 10px 30px 10px;
+    }
+
+    .artikkelkort{
+        padding: 20px 0px;
+        transition:all ease-in-out 0.8s; 
+    }
+
+    .artikkelkort:hover{
+        transform: scale(1.05); 
+    }
+
+    .artikkelkort h3{
+        font-size: 30px;
+    }
+
+
     /* Forside */
+
+}
+
+
+@media only screen and (max-width: 1600px) and (min-width: 1360px){
+   
+    /* Portfolio */
+
+    .artikkelliste .størrebilde{
+        width: 38.971vw;
+    }
+
+    .artikkelliste img{
+        width: 25.735vw;
+        padding: 0px 10px 30px 10px;
+    }
 
 }
