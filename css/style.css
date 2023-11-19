@@ -148,15 +148,32 @@
 
 /* Portfolio */
 
+
+/* 
+Løsning for å få lavere opacity/overlay på bakgrunnsbilde er hentet fra 
+Youtube-skaperen Kevin Powell sin Youtube kanal Kevin Powell, 
+fra videoen "Lower the opacity of a background-image with CSS", 
+link: https://www.youtube.com/watch?v=lRPguPbovro
+*/
 .portfolioheader{
-    background: url(../img/busy.jpg) rgb(202 206 212);
+    background: url(../img/busy.jpg);
     background-size: cover;
-    background-blend-mode: multiply;
+    position: relative;
+    isolation: isolate;
     width: 100%;
     height: 80vw;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.portfolioheader::after{
+    content: '';
+    inset: 0;
+    z-index: -1;
+    position: absolute;
+    background: rgb(187, 188, 196);
+    opacity: 0.5;
 }
 
 .portfolioh1{
@@ -257,6 +274,192 @@
     display: none;
 }
 
+/* 
+Løsning for å få lavere opacity/overlay på bakgrunnsbilde er hentet fra 
+Youtube-skaperen Kevin Powell sin Youtube kanal Kevin Powell, 
+fra videoen "Lower the opacity of a background-image with CSS", 
+link: https://www.youtube.com/watch?v=lRPguPbovro
+*/
+
+#read-more-services{
+    background: url(../img/busy.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    isolation: isolate;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    height: 133.333vw;
+    padding: 0px 13.333vw;
+}
+
+#read-more-services::after{
+    content: '';
+    inset: 0;
+    z-index: -1;
+    position: absolute;
+    background: rgb(187, 188, 196);
+    opacity: 0.5;
+}
+
+
+.readmoreh1{
+    font-size: 8vw;
+    font-weight: 700;
+    padding-bottom: 5.333vw;
+}
+
+.readmoreh2{
+    font-size: 5.333vw;
+    font-weight: 500;
+    padding-bottom: 5.333vw;
+}
+
+#service-btn{
+    text-decoration: none;
+    text-align: left;
+    color: black;
+    font-weight: 700;
+    font-size: 5.333vw;
+}
+
+#engaging{
+    padding: 13.333vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.engagingh2{
+    font-size: 6.667vw;
+    padding-bottom: 10.667vw;
+}
+
+.engagingh3{
+    font-size: 5.333vw;
+    font-weight: 500;
+    padding-bottom: 10.667vw;
+}
+
+#ourcompany{
+    background-color: var(--gullgul);
+    padding: 13.333vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+}
+
+.aboutourcompany{
+    width: 100%;
+}
+
+.bildecompany{
+    width: 100%;
+}
+
+.companyh2{
+    padding: 13.333vw 10px 10px 10px;
+    width: 60%;
+    font-size: 6.667vw;
+}
+
+.companyh3{
+    padding: 10px 10px 10.667vw 10px;
+    font-size: 5.333vw;
+    font-weight: 500;
+}
+
+/* Her har jeg brukt flex for å få brukt wrap på teksten*/
+#company-btn{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: fit-content;
+    text-decoration: none;
+    color: black;
+    padding: 4vw;
+    padding-right: 21.333vw;
+    font-size: 5.333vw;
+    font-weight: 700;
+    border: 3px solid black;
+}
+
+#ourservices{
+    padding: 13.333vw 13.333vw 10px 13.333vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.servicesh2{
+    font-size: 6.667vw;
+    padding-bottom: 13.333vw;
+}
+
+.serviceslist{
+    list-style-type: none;
+}
+
+.serviceslist li{
+    padding-bottom: 13.333vw;
+}
+
+.serviceh3{
+    font-size: 6.667vw;
+    padding: 4vw 0px;
+}
+
+.serviceh4{
+    font-size: 5.333vw;
+    font-weight: 500;
+}
+
+.servicekort i{
+    font-size: 13.333vw;
+    padding-top: 2.667vw;
+}
+
+#newsletter-signup{
+    background-color: #eeeeee;
+    padding: 13.333vw 5.333vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.signuph2{
+    font-size: 6.133vw;
+    width: fit-content;
+    padding-bottom: 5.333vw;
+}
+
+#email-signup{
+    border: none;
+    padding: 4vw;
+    font-size: 3.467vw;
+}
+
+.signup-btn{
+    border: none;
+    padding: 4vw;
+    background-color: var(--gullgul);
+    color: black;
+    font-weight: 700;
+    font-size: 3.467vw;
+    margin-left: 1.333vw;
+}
+
 @media only screen and (max-width: 1600px) and (min-width: 800px){
     /* Grid-container felles alle sider desktop */
     .grid-container{
@@ -329,7 +532,7 @@
     }
 
     .yellow-btn:hover{
-        background-color: black;
+        background-color: var(--gråsvart);
         color: var(--gullgul);
     }
 
@@ -414,7 +617,7 @@
     }
 
     .job-btn:hover{
-        background-color: black;
+        background-color: var(--gråsvart);
         color: var(--gullgul);
     }
 
@@ -454,6 +657,78 @@
 
     /* Forside */
 
+    #read-more-services{
+        background-image: none;
+        padding: 20px 0px;
+        display: flex;
+        flex-direction: column;
+        height: 550px;
+        position: relative;
+    }
+
+    #read-more-services::after{
+        display: none;
+    }
+
+    .overlayvideo{
+        background-color: #fff;
+        opacity: 0.4;
+        height: 550px;
+        width: 100%;
+        position: absolute;
+        z-index: -1;
+    }
+
+    .desktopvideo{
+        display: flex;
+        object-fit: cover;
+        object-position: top;
+        height: 550px;
+        width: 100%;
+    }
+
+    .readmoreh1{
+        font-size: 60px;
+        padding: 20px;
+    }
+
+    .readmoreh2{
+        font-size: 25px;
+        font-weight: 400;
+        max-width: 65%;
+        padding: 20px;
+        padding-bottom: 30px;
+    }
+
+    #service-btn{
+        font-size:25px;
+        padding: 20px;
+    }
+
+    #service-btn:hover{
+        color: var(--gullgul);
+        background-color: var(--gråsvart);
+    }
+
+
+
+    #engaging{
+        padding: 20px 0px;
+    }
+
+    #ourcompany{
+        padding: 20px 0px;
+    }
+
+    #ourservices{
+        padding: 20px 0px;
+    }
+
+    #newsletter-signup{
+        padding: 20px 0px;
+    }
+
+
 }
 
 @media only screen and (max-width: 1600px) and (min-width: 1200px){
@@ -467,5 +742,6 @@
     .artikkelliste li :nth-child(2n):nth-last-child(2) {
         width: calc(50% - 20px);
     }
+
 
 }

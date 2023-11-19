@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- Mikrodata-kode lagt til av Google Structured Data Markup Helper. -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,13 +7,13 @@
     <meta name="description" content="ILOCREAM PLEAM's portfolio of previous jobs - Explore our previous jobs in branding, design and development">
     <meta name="author" content="Vida Madelen Hansen">
     <!--- Facebook og Instagram metadata -->
-    <meta property="og:title" content="Portfolio for ILOCREAM PLEAM - see our previous jobs!">
+    <meta property="og:title" content="ILOCREAM PLEAM portfolio - see our previous jobs here!">
     <meta property="og:description" content="ILOCREAM PLEAM's portfolio of previous jobs - Explore our previous jobs in branding, design and development">
     <meta property="og:image" content="img/busy.jpg">
     <meta property="og:site_name" content="ILOCREAM PLEAM">
     <!-- Slutt -->
     <!-- Twitter metadata -->
-    <meta name=”twitter:title” content="Portfolio for ILOCREAM PLEAM - see our previous jobs!">
+    <meta name=”twitter:title” content="ILOCREAM PLEAM portfolio - see our previous jobs here!">
     <meta name=”twitter:description” content="ILOCREAM PLEAM's portfolio of previous jobs - Explore our previous jobs in branding, design and development">
     <meta name=”twitter:image” content="img/busy.jpg">
     <!-- Slutt -->
@@ -31,7 +32,7 @@
      <!--- Style.css link -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <!-- Style.css link slutt-->
-    <title>Portfolio for ILOCREAM PLEAM - see our previous jobs!</title>
+    <title>ILOCREAM PLEAM portfolio - see our previous jobs here!</title>
 </head>
 <body>
     <div class="grid-container">
@@ -39,44 +40,60 @@
             <a href="#mainindex" class="skip" aria-label="Skip to main content">Skip to main content</a>
             <nav class="navmenyen" aria-label="Main navigation">
                 <ul class="navliste-mobile">
-                    <li class="listerekke">
+                    <li class="listerekke" itemscope itemtype="http://schema.org/SiteNavigationElement">
                         <span class="logo-hjem">
-                            <a href="index.html" class="logo-hjem" aria-label="Logo with Home-button functionality">
+                            <a href="index.html" class="logo-hjem" aria-label="Logo with Home-button functionality" itemprop="url">
                                 <img src="img/logo1.png" alt="Company logo" class="logo" aria-label="Company logo">
                             </a>
                         </span>
                     </li>
-                    <li class="listerekke">
-                        <a href="index.html" aria-label="Go to home">Home</a>
+                    <li class="listerekke" itemscope itemtype="http://schema.org/SiteNavigationElement">
+                        <a href="index.html" aria-label="Go to home" itemprop="url">
+                            <span itemprop="name">Home</span>
+                        </a>
                     </li>
-                    <li class="listerekke">
-                        <a href="portfolio.html" class="currentlink" aria-label="Go to portfolio">Portfolio</a>
+                    <li class="listerekke" itemscope itemtype="http://schema.org/SiteNavigationElement">
+                        <a href="portfolio.html" class="currentlink" aria-label="Go to portfolio" itemprop="url">
+                            <span itemprop="name">Portfolio</span>
+                        </a>
                     </li>
-                    <li class="listerekke">
-                        <a href="about.html" aria-label="Go to about us">About</a>
+                    <li class="listerekke" itemscope itemtype="http://schema.org/SiteNavigationElement">
+                        <a href="about.html" aria-label="Go to about us" itemprop="url">
+                            <span itemprop="name">About</span>
+                        </a>
                     </li>
-                    <li class="contactknapp">
-                        <a href="about.html#contactus" class="yellow-btn" aria-label="Go to contact us">Contact</a>
+                    <li class="contactknapp" itemscope itemtype="http://schema.org/SiteNavigationElement">
+                        <a href="about.html#contactus" class="yellow-btn" aria-label="Go to contact us" itemprop="url">
+                            <span itemprop="name">Contact</span>
+                        </a>
                     </li>
                 </ul>
                 <section class="navmeny-desktop">
-                    <span class="logo-hjem">
-                        <a href="index.html" class="logo-hjem" aria-label="Logo with Home-button functionality">
+                    <span class="logo-hjem" itemscope itemtype="http://schema.org/SiteNavigationElement">
+                        <a href="index.html" class="logo-hjem" aria-label="Logo with Home-button functionality" itemprop="url">
                             <img src="img/logo1.png" alt="Company logo" class="logo" aria-label="Company logo">
                         </a>
                     </span>
                     <ul class="navliste-desktop">
-                        <li>
-                            <a href="index.html" aria-label="Go to home">Home</a>
+                        <li itemscope itemtype="http://schema.org/SiteNavigationElement">
+                            <a href="index.html" aria-label="Go to home" itemprop="url">
+                                <span itemprop="name">Home</span>
+                            </a>
                         </li>
-                        <li>
-                            <a href="portfolio.html" class="currentlink" aria-label="Go to portfolio">Portfolio</a>
+                        <li itemscope itemtype="http://schema.org/SiteNavigationElement">
+                            <a href="portfolio.html" class="currentlink" aria-label="Go to portfolio" itemprop="url">
+                                <span itemprop="name">Portfolio</span>
+                            </a>
                         </li>
-                        <li>
-                            <a href="about.html" aria-label="Go to about us">About</a>
+                        <li itemscope itemtype="http://schema.org/SiteNavigationElement">
+                            <a href="about.html" aria-label="Go to about us" itemprop="url">
+                                <span itemprop="name">About</span>
+                            </a>
                         </li>
-                        <li>
-                            <a href="about.html#contactus" class="yellow-btn" aria-label="Go to contact us">Contact</a>
+                        <li itemscope itemtype="http://schema.org/SiteNavigationElement">
+                            <a href="about.html#contactus" class="yellow-btn" aria-label="Go to contact us" itemprop="url">
+                                <span itemprop="name">Contact</span>
+                            </a>
                         </li>
                     </ul>
                 </section>

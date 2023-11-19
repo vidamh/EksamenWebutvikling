@@ -1,8 +1,22 @@
 <!DOCTYPE html>
+<!-- Mikrodata-kode lagt til av Google Structured Data Markup Helper. -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ILOCREAM PLEAM's Home page - learn abour our company and the services we provide, and get in contact with us!">
+    <meta name="author" content="Vida Madelen Hansen">
+    <!--- Facebook og Instagram metadata -->
+    <meta property="og:title" content="ILOCREAM PLEAM - Welcome to our home page!">
+    <meta property="og:description" content="ILOCREAM PLEAM's Home page - learn abour our company and the services we provide, and get in contact with us!">
+    <meta property="og:image" content="img/business.jpg">
+    <meta property="og:site_name" content="ILOCREAM PLEAM">
+    <!-- Slutt -->
+    <!-- Twitter metadata -->
+    <meta name=”twitter:title” content="ILOCREAM PLEAM - Welcome to our home page!">
+    <meta name=”twitter:description” content="ILOCREAM PLEAM's Home page - learn abour our company and the services we provide, and get in contact with us!">
+    <meta name=”twitter:image” content="img/business.jpg">
+    <!-- Slutt -->
     <!-- Google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,52 +32,68 @@
     <!--- Style.css link -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <!-- Style.css link slutt-->
-    <title>Front page</title>
+    <title>ILOCREAM PLEAM - Welcome to our home page!</title>
 </head>
 <body>
     <div class="grid-container">
         <header class="navmeny">
             <a href="#mainindex" class="skip" aria-label="Skip to main content">Skip to main content</a>
-            <nav class="navmenyen" aria-label="Main navigation" role="navigation">
+            <nav class="navmenyen" aria-label="Main navigation">
                 <ul class="navliste-mobile">
-                    <li class="listerekke">
+                    <li class="listerekke" itemscope itemtype="http://schema.org/SiteNavigationElement">
                         <span class="logo-hjem">
-                            <a href="index.html" class="logo-hjem" aria-label="Logo with Home-button functionality">
+                            <a href="index.html" class="logo-hjem" aria-label="Logo with Home-button functionality" itemprop="url">
                                 <img src="img/logo1.png" alt="Company logo" class="logo" aria-label="Company logo">
                             </a>
                         </span>
                     </li>
-                    <li class="listerekke">
-                        <a href="index.html" class="currentlink" aria-label="Go to home">Home</a>
+                    <li class="listerekke" itemscope itemtype="http://schema.org/SiteNavigationElement">
+                        <a href="index.html" class="currentlink" aria-label="Go to home" itemprop="url">
+                            <span itemprop="name">Home</span>
+                        </a>
                     </li>
-                    <li class="listerekke">
-                        <a href="portfolio.html" aria-label="Go to portfolio">Portfolio</a>
+                    <li class="listerekke" itemscope itemtype="http://schema.org/SiteNavigationElement">
+                        <a href="portfolio.html" aria-label="Go to portfolio" itemprop="url">
+                            <span itemprop="name">Portfolio</span>
+                        </a>
                     </li>
-                    <li class="listerekke">
-                        <a href="about.html" aria-label="Go to about us">About</a>
+                    <li class="listerekke" itemscope itemtype="http://schema.org/SiteNavigationElement">
+                        <a href="about.html" aria-label="Go to about us" itemprop="url">
+                            <span itemprop="name">About</span>
+                        </a>
                     </li>
-                    <li class="contactknapp">
-                        <a href="about.html#contactus" class="yellow-btn" aria-label="Go to contact us">Contact</a>
+                    <li class="contactknapp" itemscope itemtype="http://schema.org/SiteNavigationElement">
+                        <a href="about.html#contactus" class="yellow-btn" aria-label="Go to contact us" itemprop="url">
+                            <span itemprop="name">Contact</span>
+                        </a>
                     </li>
                 </ul>
                 <section class="navmeny-desktop">
-                    <span class="logo-hjem">
-                        <a href="index.html" class="logo-hjem" aria-label="Logo with Home-button functionality">
+                    <span class="logo-hjem" itemscope itemtype="http://schema.org/SiteNavigationElement">
+                        <a href="index.html" class="logo-hjem" aria-label="Logo with Home-button functionality" itemprop="url">
                             <img src="img/logo1.png" alt="Company logo" class="logo" aria-label="Company logo">
                         </a>
                     </span>
                     <ul class="navliste-desktop">
-                        <li>
-                            <a href="index.html" class="currentlink" aria-label="Go to home">Home</a>
+                        <li itemscope itemtype="http://schema.org/SiteNavigationElement">
+                            <a href="index.html" class="currentlink" aria-label="Go to home" itemprop="url">
+                                <span itemprop="name">Home</span>
+                            </a>
                         </li>
-                        <li>
-                            <a href="portfolio.html" aria-label="Go to portfolio">Portfolio</a>
+                        <li itemscope itemtype="http://schema.org/SiteNavigationElement">
+                            <a href="portfolio.html" aria-label="Go to portfolio" itemprop="url">
+                                <span itemprop="name">Portfolio</span>
+                            </a>
                         </li>
-                        <li>
-                            <a href="about.html" aria-label="Go to about us">About</a>
+                        <li itemscope itemtype="http://schema.org/SiteNavigationElement">
+                            <a href="about.html" aria-label="Go to about us" itemprop="url">
+                                <span itemprop="name">About</span>
+                            </a>
                         </li>
-                        <li>
-                            <a href="about.html#contactus" class="yellow-btn" aria-label="Go to contact us">Contact</a>
+                        <li itemscope itemtype="http://schema.org/SiteNavigationElement">
+                            <a href="about.html#contactus" class="yellow-btn" aria-label="Go to contact us" itemprop="url">
+                                <span itemprop="name">Contact</span>
+                            </a>
                         </li>
                     </ul>
                 </section>
@@ -71,82 +101,82 @@
         </header>
         <main class="main" id="mainindex">
             <section id="read-more-services">
-                <video controls autoplay muted class="desktopvideo">
-                    <source src="img/mountains.mp4" type="video/mp4">
-                </video>
-                <img src="img/workspace.jpg" alt="Laptop sitting on desk" class="mobilebilde">
-                <h1>Compelling headline</h1>
-                <h2>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis magna neque. <br>
-                    Nulla facilisi. Nullam sed enim lectus. Fusce eget dolor vel ex feugiat dapibus. <br>
-                    Donec et laoreet dui, id interdum tortor. Aenean ut dictum arcu, commodo consectetur mauris. <br>
-                    Integer placerat vestibulum eleifend. Nullam hendrerit ante tempor sapien aliquam accumsan.
+                <div class="overlayvideo">
+                    <video autoplay muted loop class="desktopvideo">
+                        <source src="img/mountains.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <h1 class="readmoreh1">Compelling headline</h1>
+                <h2 class="readmoreh2">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis magna neque.
+                    Nulla facilisi. Nullam sed enim lectus. Fusce eget dolor vel ex feugiat dapibus.
+                    Donec et laoreet dui, id interdum tortor. 
                 </h2>
-                <a href="#ourservices" class="yellow-btn">Read more about our services</a>
+                <a href="#ourservices" class="yellow-btn" id="service-btn">Read more about our services</a>
             </section>
-            <section>
-                <h2>Engaging subheading. What can you help your visitors with</h2>
-                <h3>
-                    Vestibulum feugiat, leo porttitor laoreet laoreet, nisl tellus sagittis nisi, <br>
-                    in mattis justo nulla at dolor. Nulla tellus nisl, bibendum ut pulvinar vitae, <br>
-                    consectetur quis massa. Aenean vitae feugiat nisl. Sed sit amet pellentesque ante, <br>
-                    et volutpat tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada <br>
+            <section id="engaging">
+                <h2 class="engagingh2">Engaging subheading.<br> What can you help your visitors with</h2>
+                <h3 class="engagingh3">
+                    Vestibulum feugiat, leo porttitor laoreet laoreet, nisl tellus sagittis nisi,
+                    in mattis justo nulla at dolor. Nulla tellus nisl, bibendum ut pulvinar vitae,
+                    consectetur quis massa. Aenean vitae feugiat nisl. Sed sit amet pellentesque ante,
+                    et volutpat tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada
                     fames ac turpis egestas. 
                 </h3>
             </section>
             <section id="ourcompany">
-                <article>
-                    <img src="img/400x400.png" alt="Placeholder image">
-                    <h2>About our company</h2>
-                    <h3>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis magna neque. Nulla facilisi.<br>
-                         Nullam sed enim lectus. Fusce eget dolor vel ex feugiat dapibus. Donec et laoreet dui, id interdum tortor. <br>
-                         Aenean ut dictum arcu, commodo consectetur mauris. Integer placerat vestibulum eleifend. <br>
-                         Nullam hendrerit ante tempor sapien aliquam accumsan.
+                <article class="aboutourcompany" itemscope itemtype="http://schema.org/Article">
+                    <img src="img/400x400.png" alt="Placeholder image" class="bildecompany" itemprop="image" >
+                    <h2 class="companyh2" itemprop="headline">About our company</h2>
+                    <h3 class="companyh3" itemprop="articleBody">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis magna neque. Nulla facilisi.
+                        Nullam sed enim lectus. Fusce eget dolor vel ex feugiat dapibus. Donec et laoreet dui, id interdum tortor.
+                        Aenean ut dictum arcu, commodo consectetur mauris. Integer placerat vestibulum eleifend. 
+                        Nullam hendrerit ante tempor sapien aliquam accumsan.
                     </h3>
-                    <a href="about.html" class="readmore-btn">Read more about us</a>
+                    <a href="about.html" class="readmore-btn" id="company-btn">Read more about us</a>
                 </article>
             </section>
             <section id="ourservices">
-                <h2>Our services</h2>
+                <h2 class="servicesh2">Our services</h2>
                 <ul class="serviceslist">
                     <li>
-                        <article>
+                        <article class="servicekort" itemscope itemtype="http://schema.org/Article">
                             <i class="fa fa-users" aria-hidden="true"></i>
-                            <h3>Branding</h3>
-                            <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+                            <h3 class="serviceh3" itemprop="headline">Branding</h3>
+                            <h4 class="serviceh4" itemprop="articleBody">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
                         </article>
                     </li>
                     <li>
-                        <article>
+                        <article class="servicekort" itemscope itemtype="http://schema.org/Article">
                             <i class="fa fa-cloud-upload" aria-hidden="true"></i>
-                            <h3>Branding</h3>
-                            <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+                            <h3 class="serviceh3" itemprop="headline">Branding</h3>
+                            <h4 class="serviceh4" itemprop="articleBody">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
                         </article>
                     </li>
                     <li>
-                        <article>
+                        <article class="servicekort" itemscope itemtype="http://schema.org/Article">
                             <i class="fa fa-code" aria-hidden="true"></i>
-                            <h3>Branding</h3>
-                            <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+                            <h3 class="serviceh3" itemprop="headline">Branding</h3>
+                            <h4 class="serviceh4" itemprop="articleBody">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
                         </article>
                     </li>
                     <li>
-                        <article>
+                        <article class="servicekort" itemscope itemtype="http://schema.org/Article">
                             <i class="fa fa-wifi" aria-hidden="true"></i>
-                            <h3>Branding</h3>
-                            <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+                            <h3 class="serviceh3" itemprop="headline">Branding</h3>
+                            <h4 class="serviceh4" itemprop="articleBody">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
                         </article>
                     </li>
                 </ul>
             </section>
             <section id="newsletter-signup">
+                <h2 class="signuph2">Sign up for our newsletter</h2>
                 <form>
-                    <h2>Sign up for our newsletter</h2>
                     <label for="email-signup">
                         <input type="text" id="email-signup" aria-label="Nora@epost.no" placeholder="Nora@epost.no">
                     </label>
-                    <input type="submit" value="Sign me up!">
+                    <input type="submit" value="Sign me up!" class="signup-btn">
                 </form>
             </section>
             <a href="#top" class="backtotop-btn">
