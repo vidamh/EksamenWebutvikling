@@ -446,8 +446,8 @@ link: https://www.youtube.com/watch?v=lRPguPbovro
 
 #email-signup{
     border: none;
-    padding: 4vw;
-    font-size: 3.467vw;
+    font-size: 15px;
+    padding: 15px;
 }
 
 .signup-btn{
@@ -456,8 +456,46 @@ link: https://www.youtube.com/watch?v=lRPguPbovro
     background-color: var(--gullgul);
     color: black;
     font-weight: 700;
-    font-size: 3.467vw;
-    margin-left: 1.333vw;
+    font-size: 15px;
+    padding: 15px;
+}
+
+
+@media only screen and (max-width: 800px) and (min-width: 440px){
+
+    #ourservices{
+        padding: 20px 0px;
+    }
+    .serviceslist{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .serviceslist li{
+        padding: 10px 40px;
+        width: 30%;
+    }
+
+
+    .servicekort i{
+        font-size: 45px;
+        padding: 0px;
+    }
+
+    .serviceh3{
+        font-size: 20px;
+        padding: 0px;
+        padding-top: 20px;
+    }
+
+    .serviceh4{
+        font-size: 18px;
+        padding: 0px;
+        padding-top: 20px;
+    }
 }
 
 @media only screen and (max-width: 1600px) and (min-width: 800px){
@@ -715,22 +753,137 @@ link: https://www.youtube.com/watch?v=lRPguPbovro
         background-color: var(--gråsvart);
     }
 
-
-
     #engaging{
-        padding: 20px 0px;
+        padding: 40px 20px;
+    }
+
+    .engagingh2{
+        font-size: 50px;
+        padding: 0px 20px;
+        padding-bottom: 60px;
+    }
+
+    .engagingh3{
+        font-size: 20px;
+        max-width: 70%;
+        padding: 0px 20px;
+        padding-bottom: 30px;
     }
 
     #ourcompany{
+        padding: 40px 0px;
+        justify-content: left;
+        align-items: center;
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .aboutourcompany{
+        display: flex;
+        align-items: center;
+    }
+
+    .companycontent{
+        display: flex;
+        flex-direction: column;
+        padding: 0px 20px;
+        width: 55%;
+    }
+
+    .companyh2{
+        font-size: 30px;
+        padding: 10px 0px;
+        height: fit-content;
+    }
+
+    .companyh3{
+        font-size: 18px;
         padding: 20px 0px;
+        padding-right: 20px;
+        height: fit-content;
+    }
+
+    .bildecompany{
+        width: 30%;
+        padding: 0px 40px;
+    }
+
+    #company-btn{
+        font-size: 18px;
+        padding: 15px;
+    }
+
+    #company-btn:hover{
+        background-color: var(--gråsvart);
+        color: var(--gullgul);
     }
 
     #ourservices{
-        padding: 20px 0px;
+        padding: 40px 0px;
+    }
+
+    .servicesh2{
+        font-size: 50px;
+        padding-top: 20px;
+        padding: 20px;
+    }
+
+    .serviceslist{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-wrap: wrap;
+        padding: 40px;
+    }
+
+    .serviceslist li{
+        padding: 10px 10px;
+        width: 30%;
+    }
+
+    .servicekort i{
+        font-size: 45px;
+        padding: 0px;
+    }
+
+    .serviceh3{
+        font-size: 20px;
+        padding: 0px;
+        padding-top: 20px;
+    }
+
+    .serviceh4{
+        font-size: 18px;
+        padding: 0px;
+        padding-top: 20px;
     }
 
     #newsletter-signup{
-        padding: 20px 0px;
+        padding: 40px 0px;
+    }
+
+    .signuph2{
+        font-size: 50px;
+        padding: 40px;
+    }
+
+    #email-signup{
+        font-size: 15px;
+        padding: 15px;
+        margin: 0px;
+    }
+
+    .signup-btn{
+        font-size: 15px;
+        padding: 15px;
+        margin: 0px;
+        margin-bottom: 10px;
+    }
+
+    .signup-btn:hover{
+        background-color: var(--gråsvart);
+        color: var(--gullgul);
     }
 
 
@@ -748,5 +901,11 @@ link: https://www.youtube.com/watch?v=lRPguPbovro
         width: calc(50% - 20px);
     }
 
+
+    /* Forside */
+
+    .serviceslist li{
+        width: 20%;
+    }
 
 }
