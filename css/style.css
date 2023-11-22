@@ -59,7 +59,7 @@
     overflow: hidden;
     text-align: center;
     margin-bottom: 20px;
-    font-size: 4.267vw;
+    font-size: 16px;
 }
 
 .navliste-mobile .listerekke{
@@ -72,16 +72,16 @@
 }
 
 .logo{
-    width: 21.333vw;
+    width: 100px;
 }
 
 .contactknapp{
-    padding: 5.333vw 0px;
+    padding: 20px 0px;
 }
 
 .yellow-btn{
     background-color: var(--gullgul);
-    padding: 4vw;
+    padding: 15px;
     font-weight: 700;
 }
 
@@ -127,7 +127,7 @@
 }
 
 .footer-h2{
-    font-size: 4.267vw;
+    font-size: 15px;
     font-weight: 400;
     color: white;
 }
@@ -292,8 +292,8 @@ link: https://www.youtube.com/watch?v=lRPguPbovro
     align-items: center;
     flex-direction: column;
     text-align: center;
-    height: 133.333vw;
-    padding: 0px 13.333vw;
+    height: 500px;
+    padding: 0px 50px
 }
 
 #read-more-services::after{
@@ -307,15 +307,15 @@ link: https://www.youtube.com/watch?v=lRPguPbovro
 
 
 .readmoreh1{
-    font-size: 8vw;
+    font-size: 30px;
     font-weight: 700;
-    padding-bottom: 5.333vw;
+    padding-bottom: 20px;
 }
 
 .readmoreh2{
-    font-size: 5.333vw;
+    font-size: 20px;
     font-weight: 500;
-    padding-bottom: 5.333vw;
+    padding-bottom: 20px;
 }
 
 #service-btn{
@@ -323,11 +323,11 @@ link: https://www.youtube.com/watch?v=lRPguPbovro
     text-align: left;
     color: black;
     font-weight: 700;
-    font-size: 5.333vw;
+    font-size: 20px;
 }
 
 #engaging{
-    padding: 13.333vw;
+    padding: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -336,19 +336,19 @@ link: https://www.youtube.com/watch?v=lRPguPbovro
 }
 
 .engagingh2{
-    font-size: 6.667vw;
-    padding-bottom: 10.667vw;
+    font-size: 25px;
+    padding-bottom: 40px;
 }
 
 .engagingh3{
-    font-size: 5.333vw;
+    font-size: 20px;
     font-weight: 500;
-    padding-bottom: 10.667vw;
+    padding-bottom: 40px;
 }
 
 #ourcompany{
     background-color: var(--gullgul);
-    padding: 13.333vw;
+    padding: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -365,14 +365,14 @@ link: https://www.youtube.com/watch?v=lRPguPbovro
 }
 
 .companyh2{
-    padding: 13.333vw 10px 10px 10px;
+    padding: 50px 10px 10px 10px;
     width: 60%;
-    font-size: 6.667vw;
+    font-size: 25px;
 }
 
 .companyh3{
-    padding: 10px 10px 10.667vw 10px;
-    font-size: 5.333vw;
+    padding: 10px 10px 40px 10px;
+    font-size: 20px;
     font-weight: 500;
 }
 
@@ -384,9 +384,9 @@ link: https://www.youtube.com/watch?v=lRPguPbovro
     width: fit-content;
     text-decoration: none;
     color: black;
-    padding: 4vw;
-    padding-right: 21.333vw;
-    font-size: 5.333vw;
+    padding: 15px;
+    padding-right: 80px;
+    font-size: 20px;
     font-weight: 700;
     border: 3px solid black;
 }
@@ -430,7 +430,7 @@ link: https://www.youtube.com/watch?v=lRPguPbovro
 
 #newsletter-signup{
     background-color: #eeeeee;
-    padding: 13.333vw 5.333vw;
+    padding: 50px 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -677,6 +677,26 @@ link: https://www.youtube.com/watch?v=lRPguPbovro
 }
 
 @media only screen and (max-width: 800px) and (min-width: 440px){
+
+    /* header */
+
+
+    .navmenyen{
+        font-size: 20px;
+    }
+
+    .navliste-mobile .listerekke{
+        padding: 10px 0px;
+    }
+
+    .logo{
+        width: 120px;
+    }
+    
+
+
+    /* Service liste */
+
 
     .ourservices{
         padding: 20px 0px;
@@ -1101,6 +1121,81 @@ link: https://www.youtube.com/watch?v=lRPguPbovro
         color: var(--gullgul);
     }
 
+    /* About */
+
+    #about-company{
+        align-items: flex-end;
+    }
+
+    .companyarticle{
+        width: 45%;
+        margin: 40px;
+    }
+
+    .aboutcompanyp{
+        font-size: 18px;
+    }
+
+    .aboutcompanyh1{
+        font-size: 25px;
+    }
+
+    .aboutcompanyh2{
+        font-size: 18px;
+    }
+
+    .getintouch-btn:hover{
+        background-color: var(--gråsvart);
+        color: var(--gullgul);
+    }
+
+    #clients{
+        padding: 50px 0px;
+    }
+
+    .clienth2{
+        font-size: 40px;
+    }
+
+    #contactus{
+        padding: 50px 0px;
+        padding-bottom: 0px;
+    }
+
+    .contactush2{
+        font-size: 40px;
+    }
+
+    .wrapper-mail-contactinfo{
+        display: flex;
+        flex-direction: row;
+        padding: 40px 0px 20px 0px;
+    }
+
+    .mail{
+        padding: 30px;
+    }
+
+    .mailh3{
+        font-size: 20px;
+    }
+
+    .sendmessage-btn:hover{
+        background-color: var(--gråsvart);
+        color: var(--gullgul);
+    }
+
+    .contacth2{
+        font-size: 20px;
+    }
+
+    .contactinfo{
+        padding: 30px;
+    }
+
+    .map{
+        height: 250px;
+    }
 
 }
 

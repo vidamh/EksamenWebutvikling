@@ -3,6 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ILOCREAM PLEAM's About page - explore our company, services and our clients! Send us a message or get in touch with us here!">
+    <meta name="author" content="Vida Madelen Hansen">
+    <!--- Facebook og Instagram metadata -->
+    <meta property="og:title" content="ILOCREAM PLEAM - Learn more about us here!">
+    <meta property="og:description" content="ILOCREAM PLEAM's About page - explore our company, services and our clients! Send us a message or get in touch with us here!">
+    <meta property="og:image" content="img/business.jpg">
+    <meta property="og:site_name" content="ILOCREAM PLEAM">
+    <!-- Slutt -->
+    <!-- Twitter metadata -->
+    <meta name=”twitter:title” content="ILOCREAM PLEAM - Learn more about us here!">
+    <meta name=”twitter:description” content="ILOCREAM PLEAM's About page - explore our company, services and our clients! Send us a message or get in touch with us here!">
+    <meta name=”twitter:image” content="img/business.jpg">
     <!-- Google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,7 +30,7 @@
      <!--- Style.css link -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <!-- Style.css link slutt-->
-    <title>About us</title>
+    <title>ILOCREAM PLEAM - Learn more about us here!</title>
 </head>
 <body>
     <div class="grid-container">
@@ -85,18 +97,18 @@
                 </section>
             </nav>
         </header>
-        <main class="main" id="mainabout">
+        <main class="main" id="mainabout" itemscope itemtype="https://schema.org/Organization">
             <section id="about-company">
                 <article class="companyarticle">
-                    <p class="aboutcompanyp">Company name</p>
+                    <p class="aboutcompanyp" itemprop="name">Company name</p>
                     <h1 class="aboutcompanyh1">About our company</h1>
-                    <h2 class="aboutcompanyh2">
-                        Vestibulum feugiat, leo porttitor laoreet laoreet, nisl tellus sagittis nisi, <br>
-                        in mattis justo nulla at dolor. Nulla tellus nisl, bibendum ut pulvinar vitae, consectetur quis massa. <br>
-                        Aenean vitae feugiat nisl. Sed sit amet pellentesque ante, et volutpat tellus. <br>
-                        Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. <br>
-                        Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. <br>
-                        Phasellus dictum pellentesque nisl in interdum. Aliquam hendrerit aliquam tortor a cursus. 
+                    <h2 class="aboutcompanyh2" itemprop="description">
+                        Vestibulum feugiat, leo porttitor laoreet laoreet, nisl tellus sagittis nisi,
+                        in mattis justo nulla at dolor. Nulla tellus nisl, bibendum ut pulvinar vitae, consectetur quis massa.
+                        Aenean vitae feugiat nisl. Sed sit amet pellentesque ante, et volutpat tellus.
+                        Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                        Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                        Phasellus dictum pellentesque nisl in interdum.  
                     </h2>
                     <a href="#contactus" class="getintouch-btn">Get in touch with us</a>
                 </article>
@@ -155,48 +167,56 @@
                     https://blog.getform.io/how-to-create-an-html-form-that-sends-you-an-email/ 
                     Modifisert litt for å passe eksamen-nettsiden bedre
                 -->
-                <section class="mail">
-                    <h3 class="mailh3">Send us a message</h3>
-                    <form action="mailto:vidamh@hiof.no" method="POST" enctype="multipart/form-data" name="EmailForm" class="mailform">
-                        <label for="contactname" class="labelsmail">Name</label>
-                        <input id="contactname" type="text" size="19" name="Contact-Name" placeholder="Ola Nordmann" class="inputmail">
-                            
-                        <label for="contactsubject" class="labelsmail">Subject</label>
-                        <input id="contactsubject" type="text" size="19" name="Subject-text" placeholder="Branding..." class="inputmail">
+                <section class="wrapper-mail-contactinfo">
+                    <section class="mail">
+                        <h3 class="mailh3">Send us a message</h3>
+                        <form action="mailto:vidamh@hiof.no" method="POST" enctype="multipart/form-data" name="EmailForm" class="mailform">
+                            <label for="contactname" class="labelsmail">Name</label>
+                            <input id="contactname" type="text" size="19" name="Contact-Name" placeholder="Ola Nordmann" class="inputmail">
+                                
+                            <label for="contactsubject" class="labelsmail">Subject</label>
+                            <input id="contactsubject" type="text" size="19" name="Subject-text" placeholder="Branding..." class="inputmail">
 
-                        <label for="contactmessage" class="labelsmail">Message</label>
-                        <textarea id=contactmessage name="Contact-Message" rows="6" cols="20" class="inputmail">
-                        </textarea> 
+                            <label for="contactmessage" class="labelsmail">Message</label>
+                            <textarea id=contactmessage name="Contact-Message" rows="6" cols="20" class="inputmail">
+                            </textarea> 
 
-                        <button type="submit" value="Submit" class="sendmessage-btn">Send message</button>
-                    </form>  
-                </section>
-                <section class="contactinfo">
-                    <article class="contactinfoarticle">
-                        <h2 class="contacth2">Contact information</h2>
-                        <h3 class="contacth3">
-                            Vivamus auctor et ex et pretium. Quisque tempor dapibus nisi, at pretium diam mollis in. <br>
-                            Quisque iaculis magna vehicula congue eleifend. Duis non tortor id orci lacinia gravida elementum quis urna. <br>
-                            Quisque leo lorem, iaculis euismod dolor id, malesuada facilisis purus. Cras ac tristique purus. 
-                        </h3>
-                        <ul class="contactikon-liste">
-                            <li class="contactikon-li">
-                                <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                <h4 class="contacth4">B R A Veien 4, 1757 Halden</h4>
-                            </li>
-                            <li class="contactikon-li">
-                                <i class="fa fa-phone" aria-hidden="true"></i>
-                                <h4 class="contacth4">69 60 80 00</h4>
-                            </li>
-                            <li class="contactikon-li">
-                                <i class="fa fa-envelope" aria-hidden="true"></i>
-                                <a href="mailto:postmottak@hiof.no" class="contacth4">postmottak@hiof.no</a>
-                            </li>
-                        </ul>
-                    </article>
+                            <button type="submit" value="Submit" class="sendmessage-btn">Send message</button>
+                        </form>  
+                    </section>
+                    <section class="contactinfo">
+                        <article class="contactinfoarticle">
+                            <h2 class="contacth2">Contact information</h2>
+                            <h3 class="contacth3">
+                                Vivamus auctor et ex et pretium. Quisque tempor dapibus nisi, at pretium diam mollis in. <br>
+                                Quisque iaculis magna vehicula congue eleifend. Duis non tortor id orci lacinia gravida elementum quis urna. <br>
+                                Quisque leo lorem, iaculis euismod dolor id, malesuada facilisis purus. Cras ac tristique purus. 
+                            </h3>
+                            <ul class="contactikon-liste">
+                                <li class="contactikon-li">
+                                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                    <h4 class="contacth4" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                                        <span itemprop="streetAddress">B R A Veien 4</span>, 
+                                        <span itemprop="postalCode">1757</span> 
+                                        <span itemprop="addressLocality">Halden</span>
+                                    </h4>
+                                </li>
+                                <li class="contactikon-li">
+                                    <i class="fa fa-phone" aria-hidden="true"></i>
+                                    <h4 class="contacth4" itemprop="telephone">69 60 80 00</h4>
+                                </li>
+                                <li class="contactikon-li">
+                                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                                    <a href="mailto:postmottak@hiof.no" class="contacth4">
+                                        <span itemprop="email">postmottak@hiof.no</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </article>
+                    </section>
                 </section>
                 <section class="map">
-                    <iframe class="kart" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2047.1882765433884!2d11.350228376799008!3d59.129250227020435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464412f0d344246f%3A0x4e47f19c99b253b1!2zSMO4Z3Nrb2xlbiBpIMOYc3Rmb2xk!5e0!3m2!1sno!2sno!4v1700160956360!5m2!1sno!2sno" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe itemprop="location" class="kart" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2047.1882765433884!2d11.350228376799008!3d59.129250227020435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464412f0d344246f%3A0x4e47f19c99b253b1!2zSMO4Z3Nrb2xlbiBpIMOYc3Rmb2xk!5e0!3m2!1sno!2sno!4v1700160956360!5m2!1sno!2sno" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </section>
             </section>
             <a href="#top" class="backtotop-btn">
