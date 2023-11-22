@@ -391,7 +391,7 @@ link: https://www.youtube.com/watch?v=lRPguPbovro
     border: 3px solid black;
 }
 
-#ourservices{
+.ourservices{
     padding: 13.333vw 13.333vw 10px 13.333vw;
     display: flex;
     align-items: center;
@@ -461,9 +461,224 @@ link: https://www.youtube.com/watch?v=lRPguPbovro
 }
 
 
+/* About */
+
+#about-company{
+    display: flex;
+    flex-direction: column;
+    background-image: url(../img/laptop.jpg);
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    object-fit: cover;
+    max-width: 100%;
+    padding: 20px;
+    overflow: hidden;
+}
+
+
+/* 
+Løsning for å få lavere opacity/overlay på bakgrunn er hentet fra 
+Youtube-skaperen Kevin Powell sin Youtube kanal Kevin Powell, 
+fra videoen "Lower the opacity of a background-image with CSS", 
+link: https://www.youtube.com/watch?v=lRPguPbovro
+*/
+
+.companyarticle{
+    position: relative;
+    isolation: isolate;
+    padding: 50px 40px;
+    width: 70%;
+}
+
+.companyarticle::after{
+    content: '';
+    inset: 0;
+    z-index: -1;
+    position: absolute;
+    background: rgb(255, 255, 255);
+    opacity: 0.8;
+}
+
+.aboutcompanyp{
+    font-size: 15px;
+    font-weight: 500;
+    padding: 0px;
+    padding-bottom: 20px;
+}
+
+.aboutcompanyh1{
+    font-size: 20px;
+    font-weight: 700;
+    padding: 0px;
+    padding-bottom: 20px;
+}
+
+.aboutcompanyh2{
+    font-size: 15px;
+    font-weight: 500;
+    padding: 0px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.getintouch-btn{
+    background-color: var(--gullgul);
+    color: var(--gråsvart);
+    font-weight: 700;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 15px;
+}
+
+#clients{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+    overflow: hidden;
+    background-color: var(--gullgul);
+}
+
+.clienth2{
+    padding: 20px 0px;
+    padding-bottom: 40px;
+}
+
+.clientlist{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.clientli{
+    padding: 10px 20px;
+}
+
+
+#contactus{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 30px 0px 30px;
+    overflow: hidden;
+    background-color: #eeeeee;
+}
+
+.contactush2{
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.mail{
+    display: flex;
+    justify-content: left;
+    text-align: left;
+    flex-direction: column;
+    width: 100%;
+    padding: 40px 0px;
+}
+
+.mailform{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0px;
+}
+
+.mailh3{
+    padding-bottom: 10px;
+}
+
+.labelsmail{
+    font-size: 15px;
+    padding: 10px 0px;
+}
+
+.inputmail{
+    border: none;
+    padding: 15px;
+    margin: 0px 0px 10px 0px;
+}
+
+.sendmessage-btn{
+    border: none;
+    padding: 15px;
+    width: fit-content;
+    font-size: 15px;
+    font-weight: 700;
+    background-color: var(--gullgul);
+    color: var(--gråsvart);
+}
+
+.contactinfo{
+    width: 100%;
+    padding: 40px 0px;
+}
+
+.contacth2{
+    font-size: 25px;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+
+.contacth3{
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.contactikon-liste{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0px;
+}
+
+.contactikon-li{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    padding: 10px 0px;
+}
+
+.contactikon-li i{
+    color: #4a494a;
+    font-size: 25px;
+    padding-right: 10px;
+}
+
+.contacth4{
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.map{
+   height: 300px;
+}
+
+/* 
+    Løsning for å få kartet større enn foreldre-element er hentet fra Stack Overflow fra denne diskusjonen:
+    link: https://stackoverflow.com/questions/5581034/is-there-a-way-to-make-a-child-divs-width-wider-than-the-parent-div-using-css
+*/
+
+.kart{
+    height: 100%;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
+
 @media only screen and (max-width: 800px) and (min-width: 440px){
 
-    #ourservices{
+    .ourservices{
         padding: 20px 0px;
     }
     .serviceslist{
@@ -818,7 +1033,7 @@ link: https://www.youtube.com/watch?v=lRPguPbovro
         color: var(--gullgul);
     }
 
-    #ourservices{
+    .ourservices{
         padding: 40px 0px;
     }
 
