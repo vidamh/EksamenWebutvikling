@@ -35,7 +35,7 @@
 </head>
 <body>
     <div class="grid-container">
-        <header class="navmeny">
+        <header class="navmeny" role="banner">
             <a href="#mainindex" class="skip" aria-label="Skip to main content">Skip to main content</a>
             <nav class="navmenyen" aria-label="Main navigation">
                 <ul class="navliste-mobile">
@@ -121,25 +121,25 @@
                 <ul class="artikkelliste">
                     <li>
                         <article itemscope itemtype="http://schema.org/Article" class="artikkelkort">
-                            <img itemprop="image" src="img/400x400.png" alt="Placeholder image">
+                            <img itemprop="image" src="img/400x400.png" alt="Placeholder image" aria-label="Placeholder image">
                             <h3 itemprop="headline">Et harum quidem</h3>
                         </article>
                     </li>
                     <li>
                         <article itemscope itemtype="http://schema.org/Article" class="artikkelkort">
-                            <img itemprop="image" src="img/400x400.png" alt="Placeholder image">
+                            <img itemprop="image" src="img/400x400.png" alt="Placeholder image" aria-label="Placeholder image">
                             <h3 itemprop="headline">Et harum quidem</h3>
                         </article>
                     </li>
                     <li>
                         <article itemscope itemtype="http://schema.org/Article" class="artikkelkort">
-                            <img itemprop="image" src="img/400x400.png" alt="Placeholder image">
+                            <img itemprop="image" src="img/400x400.png" alt="Placeholder image" aria-label="Placeholder image">
                             <h3 itemprop="headline">Et harum quidem</h3>
                         </article>
                     </li>
                     <li>
                         <article itemscope itemtype="http://schema.org/Article" class="artikkelkort">
-                            <img itemprop="image" src="img/400x400.png" alt="Placeholder image">
+                            <img itemprop="image" src="img/400x400.png" alt="Placeholder image" aria-label="Placeholder image">
                             <h3 itemprop="headline">Et harum quidem</h3>
                         </article>
                     </li>
@@ -150,19 +150,19 @@
                 <ul class="artikkelliste">
                     <li>
                         <article itemscope itemtype="http://schema.org/Article" class="artikkelkort">
-                            <img itemprop="image" src="img/400x400.png" alt="Placeholder image">
+                            <img itemprop="image" src="img/400x400.png" alt="Placeholder image" aria-label="Placeholder image">
                             <h3 itemprop="headline">Et harum quidem</h3>
                         </article>
                     </li>
                     <li>
                         <article itemscope itemtype="http://schema.org/Article" class="artikkelkort">
-                            <img itemprop="image" src="img/400x400.png" alt="Placeholder image">
+                            <img itemprop="image" src="img/400x400.png" alt="Placeholder image" aria-label="Placeholder image">
                             <h3 itemprop="headline">Et harum quidem</h3>
                         </article>
                     </li>
                     <li>
                         <article itemscope itemtype="http://schema.org/Article" class="artikkelkort">
-                            <img itemprop="image" src="img/400x400.png" alt="Placeholder image">
+                            <img itemprop="image" src="img/400x400.png" alt="Placeholder image" aria-label="Placeholder image">
                             <h3 itemprop="headline">Et harum quidem</h3>
                         </article>
                     </li>
@@ -173,45 +173,47 @@
                 <ul class="artikkelliste" id="developmentkortliste">
                     <li>
                         <article itemscope itemtype="http://schema.org/Article" class="artikkelkort">
-                            <img itemprop="image" src="img/400x400.png" alt="Placeholder image">
+                            <img itemprop="image" src="img/400x400.png" alt="Placeholder image" aria-label="Placeholder image">
                             <h3 itemprop="headline">Et harum quidem</h3>
                         </article>
                     </li>
                     <li>
                         <article itemscope itemtype="http://schema.org/Article" class="artikkelkort">
-                            <img itemprop="image" src="img/400x400.png" alt="Placeholder image">
+                            <img itemprop="image" src="img/400x400.png" alt="Placeholder image" aria-label="Placeholder image">
                             <h3 itemprop="headline">Et harum quidem</h3>
                         </article>
                     </li>
                 </ul>
             </section>
-            <a href="#top" class="backtotop-btn">
-                <i class="fa fa-arrow-up" aria-hidden="true"></i>
+            <a href="#top" class="backtotop-btn" aria-label="Click to go back to top">
+                <i class="fa fa-arrow-up" aria-hidden="true" aria-label="Click to go back to top"></i>
             </a>
         </main>
-        <footer class="companyfooter">
+        <footer class="companyfooter" role="contentinfo">
             <section class="companyfootercontainer">
                 <div class="logocontainerfooter">
                     <img src="img/logo1.png" alt="Company logo" class="logofooter" aria-label="Company logo">
                 </div>
                 <h2 class="footer-h2">Companyrights Companyname 2023</h2>
-                <ul class="SoMe-footer-liste">
-                    <li>
-                        <a href="https://www.facebook.com/" class="SoMe-footer" aria-label="Go to our Facebook">
-                            <i class="fa fa-facebook-official" aria-hidden="true"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/" class="SoMe-footer" aria-label="Go to our Instagram">
-                            <i class="fa fa-instagram" aria-hidden="true"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://no.linkedin.com/" class="SoMe-footer" aria-label="Go to our LinkedIn">
-                            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-                        </a>
-                    </li>
-                </ul>
+                <nav>
+                    <ul class="SoMe-footer-liste" role="navigation">
+                        <li>
+                            <a href="https://www.facebook.com/" class="SoMe-footer" aria-label="Go to our Facebook">
+                                <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/" class="SoMe-footer" aria-label="Go to our Instagram">
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://no.linkedin.com/" class="SoMe-footer" aria-label="Go to our LinkedIn">
+                                <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
             </section>
         </footer>
     </div>

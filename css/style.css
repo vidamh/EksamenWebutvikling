@@ -18,6 +18,7 @@
     "header"
     "main"
     "footer";
+    max-width: 1600px;
 }
 .navmeny{
     display: grid;
@@ -38,6 +39,10 @@
     grid-area: footer;
     overflow: hidden;
     grid-column: 1/-1;
+}
+
+body{
+    
 }
 
 /* Header nav-meny felles */
@@ -161,7 +166,7 @@ link: https://www.youtube.com/watch?v=lRPguPbovro
     position: relative;
     isolation: isolate;
     width: 100%;
-    height: 80vw;
+    height: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -177,11 +182,11 @@ link: https://www.youtube.com/watch?v=lRPguPbovro
 }
 
 .portfolioh1{
-    font-size: 9.333vw;
+    font-size: 35px;
 }
 
 .previousjobs{
-    padding: 2.667vw  8vw;
+    padding: 10px 30px;
     display: flex;
     justify-content: left;
     flex-direction: column;
@@ -189,9 +194,9 @@ link: https://www.youtube.com/watch?v=lRPguPbovro
 
 .portfolioheading{
     border-bottom: 4px solid var(--gullgul);
-    padding: 2.667vw  2.667vw  2.667vw  0px;
-    width: 80vw;
-    font-size: 6.400vw;
+    padding: 10px  10px  10px  0px;
+    width: calc(100% - 10px);
+    font-size: 25px;
 }
 
 .joblist{
@@ -199,13 +204,13 @@ link: https://www.youtube.com/watch?v=lRPguPbovro
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    max-width: 95%;
+    max-width: calc(100vw - 100px);
 }
 
 .jobtype{
     display: inline-block;
     list-style-type: none;
-    padding: 10.667vw 2.667vw 0px 0px;
+    padding: 40px 10px 0px 0px;
 }
 
 .job-btn{
@@ -213,25 +218,25 @@ link: https://www.youtube.com/watch?v=lRPguPbovro
     padding: 10px;
     text-decoration: none;
     color: black;
-    font-size: 4vw;
+    font-size: 15px;
 }
 
 #branding{
-    padding: 2.667vw 8vw;
+    padding: 10px 30px;
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
 
 #design{
-    padding: 2.667vw 8vw;
+    padding: 10px 30px;
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
 
 #development{
-    padding: 2.667vw 8vw;
+    padding: 10px 30px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -244,28 +249,31 @@ link: https://www.youtube.com/watch?v=lRPguPbovro
     flex-wrap: wrap;
     justify-content: left;
     list-style-type: none;
-    padding-top: 4vw;
+    padding-top: 15px;
 }
 
 .artikkelliste li{
     width: 100%;
     flex-grow: 1;
+    max-width: 692px;
 }
 
 .artikkelliste img{
     width: 100%;
-    padding-bottom: 4vw;
+    padding-bottom: 15px;
 }
 
 .artikkelkort{
     box-sizing: border-box;
     width: 100%;
-    padding: 5.333vw 0px 5.333vw 0px;
+    padding: 20px 0px 20px 0px;
 }
 
 .artikkelkort h3{
-    font-size: 5.067vw;
+    font-size: 19px;
 }
+
+
 
 
 /* Forside */
@@ -349,29 +357,33 @@ link: https://www.youtube.com/watch?v=lRPguPbovro
 #ourcompany{
     background-color: var(--gullgul);
     padding: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: left;
 }
 
 .aboutourcompany{
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .bildecompany{
     width: 100%;
+    max-width: 500px;
+}
+
+.companycontent{
+    max-width: calc(500px - 40px);
+    width: 80%;
 }
 
 .companyh2{
-    padding: 50px 10px 10px 10px;
-    width: 60%;
+    padding: 50px 0px 10px 0px;
     font-size: 25px;
 }
 
 .companyh3{
-    padding: 10px 10px 40px 10px;
+    padding: 10px 0px 40px 0px;
     font-size: 20px;
     font-weight: 500;
 }
@@ -395,7 +407,7 @@ link: https://www.youtube.com/watch?v=lRPguPbovro
     padding: 13.333vw 13.333vw 10px 13.333vw;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-direction: column;
     text-align: center;
 }
@@ -566,7 +578,7 @@ link: https://www.youtube.com/watch?v=lRPguPbovro
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 30px 30px 0px 30px;
+    padding-top: 30px;
     overflow: hidden;
     background-color: #eeeeee;
 }
@@ -574,6 +586,11 @@ link: https://www.youtube.com/watch?v=lRPguPbovro
 .contactush2{
     font-size: 25px;
     font-weight: 700;
+    padding: 0px 30px;
+}
+
+.wrapper-mail-contactinfo{
+    padding: 0px 30px;
 }
 
 .mail{
@@ -657,26 +674,22 @@ link: https://www.youtube.com/watch?v=lRPguPbovro
     font-weight: 500;
 }
 
-.map{
-   height: 300px;
-}
+/* Løsning for kartet er utarbeidet med hjelp av ChatGPT */
 
-/* 
-    Løsning for å få kartet større enn foreldre-element er hentet fra Stack Overflow fra denne diskusjonen:
-    link: https://stackoverflow.com/questions/5581034/is-there-a-way-to-make-a-child-divs-width-wider-than-the-parent-div-using-css
-*/
+.map{
+    height: 300px;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+
+}
 
 .kart{
+    width: 100%;
     height: 100%;
-    width: 100vw;
-    position: relative;
-    left: 50%;
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
 }
 
-@media only screen and (max-width: 800px) and (min-width: 440px){
+@media only screen and (max-width: 750px) and (min-width: 440px){
 
     /* header */
 
@@ -694,7 +707,6 @@ link: https://www.youtube.com/watch?v=lRPguPbovro
     }
     
 
-
     /* Service liste */
 
 
@@ -704,7 +716,7 @@ link: https://www.youtube.com/watch?v=lRPguPbovro
     .serviceslist{
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
         text-align: center;
     }
@@ -731,9 +743,28 @@ link: https://www.youtube.com/watch?v=lRPguPbovro
         padding: 0px;
         padding-top: 20px;
     }
+
+
+    /* Portfolio */
+
+    .artikkelkort h3{
+        font-size: 25px;
+    }
+
+    .portfolioheading{
+        font-size: 30px;
+    }
+
+    .job-btn{
+        font-size: 18px;
+    }
+
+    .jobtype{
+        padding-right: 20px;
+    }
 }
 
-@media only screen and (max-width: 1600px) and (min-width: 800px){
+@media only screen and (min-width: 750px){
     /* Grid-container felles alle sider desktop */
     .grid-container{
         display: grid;
@@ -782,7 +813,7 @@ link: https://www.youtube.com/watch?v=lRPguPbovro
     }
 
     .logo{
-        padding: 20px 10px 0px 20px;
+        padding: 15px;
         width: 120px;
     }
 
@@ -864,11 +895,11 @@ link: https://www.youtube.com/watch?v=lRPguPbovro
 
     .portfolioheader{
         background-position-y: center;
-        height: 25.056vw;
+        height: 200px;
     }
 
     .portfolioh1{
-        font-size:5vw;
+        font-size:40px;
     }
 
     #mainportfolio section{
@@ -881,17 +912,18 @@ link: https://www.youtube.com/watch?v=lRPguPbovro
     }
 
     .portfolioheading{
-        width: 80vw;
-        font-size: 3.125vw;
+        width: calc(100% - 50px);
+        font-size: 35px;
         padding-top: 0px;
+        margin-left: 20px;
     }
 
     .jobtype{
-        padding: 70px 10px 0px 10px;
+        padding: 70px 10px 0px 20px;
     }
 
     .job-btn{
-        font-size: 18px;
+        font-size: 20px;
     }
 
     .job-btn:hover{
@@ -966,7 +998,7 @@ link: https://www.youtube.com/watch?v=lRPguPbovro
     }
 
     .readmoreh1{
-        font-size: 60px;
+        font-size: 40px;
         padding: 20px;
     }
 
@@ -993,7 +1025,7 @@ link: https://www.youtube.com/watch?v=lRPguPbovro
     }
 
     .engagingh2{
-        font-size: 50px;
+        font-size: 35px;
         padding: 0px 20px;
         padding-bottom: 60px;
     }
@@ -1006,16 +1038,14 @@ link: https://www.youtube.com/watch?v=lRPguPbovro
     }
 
     #ourcompany{
-        padding: 40px 0px;
+        padding: 35px 0px;
+    }
+
+    .aboutourcompany{
         justify-content: left;
         align-items: center;
         flex-direction: row;
         text-align: left;
-    }
-
-    .aboutourcompany{
-        display: flex;
-        align-items: center;
     }
 
     .companycontent{
@@ -1023,6 +1053,7 @@ link: https://www.youtube.com/watch?v=lRPguPbovro
         flex-direction: column;
         padding: 0px 20px;
         width: 55%;
+        max-width: 100%;
     }
 
     .companyh2{
@@ -1041,6 +1072,7 @@ link: https://www.youtube.com/watch?v=lRPguPbovro
     .bildecompany{
         width: 30%;
         padding: 0px 40px;
+        min-width: 300px;
     }
 
     #company-btn{
@@ -1054,11 +1086,11 @@ link: https://www.youtube.com/watch?v=lRPguPbovro
     }
 
     .ourservices{
-        padding: 40px 0px;
+        padding: 35px 0px;
     }
 
     .servicesh2{
-        font-size: 50px;
+        font-size: 35px;
         padding-top: 20px;
         padding: 20px;
     }
@@ -1099,7 +1131,7 @@ link: https://www.youtube.com/watch?v=lRPguPbovro
     }
 
     .signuph2{
-        font-size: 50px;
+        font-size: 35px;
         padding: 40px;
     }
 
@@ -1154,7 +1186,7 @@ link: https://www.youtube.com/watch?v=lRPguPbovro
     }
 
     .clienth2{
-        font-size: 40px;
+        font-size: 35px;
     }
 
     #contactus{
@@ -1163,7 +1195,7 @@ link: https://www.youtube.com/watch?v=lRPguPbovro
     }
 
     .contactush2{
-        font-size: 40px;
+        font-size: 35px;
     }
 
     .wrapper-mail-contactinfo{
@@ -1199,7 +1231,7 @@ link: https://www.youtube.com/watch?v=lRPguPbovro
 
 }
 
-@media only screen and (max-width: 1600px) and (min-width: 1200px){
+@media only screen and (min-width: 1200px){
 
     /* Løsning for artikkelkortenes flex-grow og rad-oppførsel er utarbeidet med hjelp av ChatGPT */
 
@@ -1211,11 +1243,47 @@ link: https://www.youtube.com/watch?v=lRPguPbovro
         width: calc(50% - 20px);
     }
 
+    #developmentkortliste{
+        justify-content: space-between;
+    }
+
+    #developmentkortliste li{
+        width: calc(50% - 20px);
+    }
+    
+
 
     /* Forside */
 
     .serviceslist li{
         width: 20%;
+    }
+
+    /* Portfolio */
+
+    .developmentkortliste{
+        max-width: 692px;
+    }
+
+
+}
+
+@media only screen and (min-width: 1600px){
+    
+    .grid-container{
+        margin: auto;
+    }
+
+    /* Løsning for kartet er utarbeidet med hjelp av ChatGPT */
+
+    .map{
+        margin-left: auto;
+    }
+
+    /* Løsning for hvordan å få back to top knappen til å holde seg innenfor html-containerens maks vidde på 1600px er utarbeidet med hjelp av ChatGPT */
+
+    .backtotop-btn {
+        right: calc((100vw - 1600px + 10px) / 2);
     }
 
 }

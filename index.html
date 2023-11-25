@@ -35,7 +35,7 @@
 </head>
 <body>
     <div class="grid-container">
-        <header class="navmeny">
+        <header class="navmeny" role="banner">
             <a href="#mainindex" class="skip" aria-label="Skip to main content">Skip to main content</a>
             <nav class="navmenyen" aria-label="Main navigation">
                 <ul class="navliste-mobile">
@@ -101,7 +101,7 @@
         <main class="main" id="mainindex">
             <section id="read-more-services">
                 <div class="overlayvideo">
-                    <video autoplay muted loop class="desktopvideo">
+                    <video autoplay muted loop class="desktopvideo" aria-label="Background video">
                         <source src="img/mountains.mp4" type="video/mp4">
                     </video>
                 </div>
@@ -125,7 +125,7 @@
             </section>
             <section id="ourcompany">
                 <article class="aboutourcompany" itemscope itemtype="http://schema.org/Article">
-                    <img src="img/400x400.png" alt="Placeholder image" class="bildecompany" itemprop="image">
+                    <img src="img/400x400.png" alt="Placeholder image" class="bildecompany" itemprop="image" aria-label="Placeholder image">
                     <div class="companycontent">
                         <h2 class="companyh2" itemprop="headline">About our company</h2>
                         <h3 class="companyh3" itemprop="articleBody">
@@ -143,14 +143,14 @@
                 <ul class="serviceslist">
                     <li>
                         <article class="servicekort" itemscope itemtype="http://schema.org/Article">
-                            <i class="fa fa-users" aria-hidden="true"></i>
+                            <i class="fa fa-users" aria-hidden="true" aria-label="Icon for service"></i>
                             <h3 class="serviceh3" itemprop="headline">Branding</h3>
                             <h4 class="serviceh4" itemprop="articleBody">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
                         </article>
                     </li>
                     <li>
                         <article class="servicekort" itemscope itemtype="http://schema.org/Article">
-                            <i class="fa fa-cloud-upload" aria-hidden="true"></i>
+                            <i class="fa fa-cloud-upload" aria-hidden="true" aria-label="Icon for service"></i>
                             <h3 class="serviceh3" itemprop="headline">Branding</h3>
                             <h4 class="serviceh4" itemprop="articleBody">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
                         </article>
@@ -164,7 +164,7 @@
                     </li>
                     <li>
                         <article class="servicekort" itemscope itemtype="http://schema.org/Article">
-                            <i class="fa fa-wifi" aria-hidden="true"></i>
+                            <i class="fa fa-wifi" aria-hidden="true" aria-label="Icon for service"></i>
                             <h3 class="serviceh3" itemprop="headline">Branding</h3>
                             <h4 class="serviceh4" itemprop="articleBody">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
                         </article>
@@ -175,38 +175,40 @@
                 <h2 class="signuph2">Sign up for our newsletter</h2>
                 <form>
                     <label for="email-signup">
-                        <input type="text" id="email-signup" aria-label="Nora@epost.no" placeholder="Nora@epost.no">
+                        <input type="text" id="email-signup" aria-label="Enter your email here" placeholder="Nora@epost.no">
                     </label>
-                    <input type="submit" value="Sign me up!" class="signup-btn">
+                    <input type="submit" value="Sign me up!" class="signup-btn" aria-label="Click here to sign up!">
                 </form>
             </section>
-            <a href="#top" class="backtotop-btn">
-                <i class="fa fa-arrow-up" aria-hidden="true"></i>
+            <a href="#top" class="backtotop-btn" aria-label="Click to go back to top">
+                <i class="fa fa-arrow-up" aria-hidden="true" aria-label="Click to go back to top"></i>
             </a>
         </main>
-        <footer class="companyfooter">
+        <footer class="companyfooter" role="contentinfo">
             <section class="companyfootercontainer">
                 <div class="logocontainerfooter">
                     <img src="img/logo1.png" alt="Company logo" class="logofooter" aria-label="Company logo">
                 </div>
                 <h2 class="footer-h2">Companyrights Companyname 2023</h2>
-                <ul class="SoMe-footer-liste">
-                    <li>
-                        <a href="https://www.facebook.com/" class="SoMe-footer" aria-label="Go to our Facebook">
-                            <i class="fa fa-facebook-official" aria-hidden="true"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/" class="SoMe-footer" aria-label="Go to our Instagram">
-                            <i class="fa fa-instagram" aria-hidden="true"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://no.linkedin.com/" class="SoMe-footer" aria-label="Go to our LinkedIn">
-                            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-                        </a>
-                    </li>
-                </ul>
+                <nav>
+                    <ul class="SoMe-footer-liste" role="navigation">
+                        <li>
+                            <a href="https://www.facebook.com/" class="SoMe-footer" aria-label="Go to our Facebook">
+                                <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/" class="SoMe-footer" aria-label="Go to our Instagram">
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://no.linkedin.com/" class="SoMe-footer" aria-label="Go to our LinkedIn">
+                                <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
             </section>
         </footer>
     </div>

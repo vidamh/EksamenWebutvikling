@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- Mikrodata-kode lagt til av Google Structured Data Markup Helper. -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -33,7 +34,7 @@
 </head>
 <body>
     <div class="grid-container">
-        <header class="navmeny">
+        <header class="navmeny" role="banner">
             <a href="#mainindex" class="skip" aria-label="Skip to main content">Skip to main content</a>
             <nav class="navmenyen" aria-label="Main navigation">
                 <ul class="navliste-mobile">
@@ -117,28 +118,28 @@
                 <ul class="serviceslist">
                     <li>
                         <article class="servicekort" itemscope itemtype="http://schema.org/Article">
-                            <i class="fa fa-users" aria-hidden="true"></i>
+                            <i class="fa fa-users" aria-hidden="true" aria-label="Icon for service"></i>
                             <h3 class="serviceh3" itemprop="headline">Branding</h3>
                             <h4 class="serviceh4" itemprop="articleBody">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
                         </article>
                     </li>
                     <li>
                         <article class="servicekort" itemscope itemtype="http://schema.org/Article">
-                            <i class="fa fa-cloud-upload" aria-hidden="true"></i>
+                            <i class="fa fa-cloud-upload" aria-hidden="true" aria-label="Icon for service"></i>
                             <h3 class="serviceh3" itemprop="headline">Branding</h3>
                             <h4 class="serviceh4" itemprop="articleBody">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
                         </article>
                     </li>
                     <li>
                         <article class="servicekort" itemscope itemtype="http://schema.org/Article">
-                            <i class="fa fa-code" aria-hidden="true"></i>
+                            <i class="fa fa-code" aria-hidden="true" aria-label="Icon for service"></i>
                             <h3 class="serviceh3" itemprop="headline">Branding</h3>
                             <h4 class="serviceh4" itemprop="articleBody">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
                         </article>
                     </li>
                     <li>
                         <article class="servicekort" itemscope itemtype="http://schema.org/Article">
-                            <i class="fa fa-wifi" aria-hidden="true"></i>
+                            <i class="fa fa-wifi" aria-hidden="true" aria-label="Icon for service"></i>
                             <h3 class="serviceh3" itemprop="headline">Branding</h3>
                             <h4 class="serviceh4" itemprop="articleBody">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
                         </article>
@@ -149,13 +150,13 @@
                 <h2 class="clienth2">Some of our clients</h2>
                 <ul class="clientlist">
                     <li class="clientli">
-                        <img src="img/logo1.png" alt="Company logo" class="clientlogo">
+                        <img src="img/logo1.png" alt="Company logo" class="clientlogo" aria-label="Clients company logo">
                     </li>
                     <li class="clientli">
-                        <img src="img/logo2.png" alt="Company logo" class="clientlogo">
+                        <img src="img/logo2.png" alt="Company logo" class="clientlogo" aria-label="Clients company logo">
                     </li>
                     <li class="clientli">
-                        <img src="img/logo3.png" alt="Company logo" class="clientlogo">
+                        <img src="img/logo3.png" alt="Company logo" class="clientlogo" aria-label="Clients company logo">
                     </li>
                 </ul>
             </section>
@@ -169,15 +170,15 @@
                 <section class="wrapper-mail-contactinfo">
                     <section class="mail">
                         <h3 class="mailh3">Send us a message</h3>
-                        <form action="mailto:vidamh@hiof.no" method="POST" enctype="multipart/form-data" name="EmailForm" class="mailform">
+                        <form action="mailto:postmottak@hiof.no" method="POST" enctype="multipart/form-data" name="EmailForm" class="mailform">
                             <label for="contactname" class="labelsmail">Name</label>
-                            <input id="contactname" type="text" size="19" name="Contact-Name" placeholder="Ola Nordmann" class="inputmail">
+                            <input id="contactname" type="text" size="19" name="Contact-Name" placeholder="Ola Nordmann" class="inputmail" aria-label="Enter your name here">
                                 
                             <label for="contactsubject" class="labelsmail">Subject</label>
-                            <input id="contactsubject" type="text" size="19" name="Subject-text" placeholder="Branding..." class="inputmail">
+                            <input id="contactsubject" type="text" size="19" name="Subject-text" placeholder="Branding..." class="inputmail" aria-label="Enter email subject here">
 
                             <label for="contactmessage" class="labelsmail">Message</label>
-                            <textarea id=contactmessage name="Contact-Message" rows="6" cols="20" class="inputmail">
+                            <textarea id=contactmessage name="Contact-Message" rows="6" cols="20" class="inputmail" aria-label="Enter your message here">
                             </textarea> 
 
                             <button type="submit" value="Submit" class="sendmessage-btn">Send message</button>
@@ -193,7 +194,7 @@
                             </h3>
                             <ul class="contactikon-liste">
                                 <li class="contactikon-li">
-                                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                    <i class="fa fa-map-marker" aria-hidden="true" aria-label="Adress"></i>
                                     <h4 class="contacth4" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
                                         <span itemprop="streetAddress">B R A Veien 4</span>, 
                                         <span itemprop="postalCode">1757</span> 
@@ -201,11 +202,11 @@
                                     </h4>
                                 </li>
                                 <li class="contactikon-li">
-                                    <i class="fa fa-phone" aria-hidden="true"></i>
+                                    <i class="fa fa-phone" aria-hidden="true" aria-label="Phone number"></i>
                                     <h4 class="contacth4" itemprop="telephone">69 60 80 00</h4>
                                 </li>
                                 <li class="contactikon-li">
-                                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                                    <i class="fa fa-envelope" aria-hidden="true" aria-label="Email"></i>
                                     <a href="mailto:postmottak@hiof.no" class="contacth4">
                                         <span itemprop="email">postmottak@hiof.no</span>
                                     </a>
@@ -215,36 +216,38 @@
                     </section>
                 </section>
                 <section class="map">
-                    <iframe itemprop="location" class="kart" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2047.1882765433884!2d11.350228376799008!3d59.129250227020435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464412f0d344246f%3A0x4e47f19c99b253b1!2zSMO4Z3Nrb2xlbiBpIMOYc3Rmb2xk!5e0!3m2!1sno!2sno!4v1700160956360!5m2!1sno!2sno" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe aria-label="Google map showing company location" itemprop="location" class="kart" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2047.1882765433884!2d11.350228376799008!3d59.129250227020435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464412f0d344246f%3A0x4e47f19c99b253b1!2zSMO4Z3Nrb2xlbiBpIMOYc3Rmb2xk!5e0!3m2!1sno!2sno!4v1700160956360!5m2!1sno!2sno" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </section>
             </section>
-            <a href="#top" class="backtotop-btn">
-                <i class="fa fa-arrow-up" aria-hidden="true"></i>
+            <a href="#top" class="backtotop-btn" aria-label="Click to go back to top">
+                <i class="fa fa-arrow-up" aria-hidden="true" aria-label="Click to go back to top"></i>
             </a>
         </main>
-        <footer class="companyfooter">
+        <footer class="companyfooter" role="contentinfo">
             <section class="companyfootercontainer">
                 <div class="logocontainerfooter">
                     <img src="img/logo1.png" alt="Company logo" class="logofooter" aria-label="Company logo">
                 </div>
                 <h2 class="footer-h2">Companyrights Companyname 2023</h2>
-                <ul class="SoMe-footer-liste">
-                    <li>
-                        <a href="https://www.facebook.com/" class="SoMe-footer" aria-label="Go to our Facebook">
-                            <i class="fa fa-facebook-official" aria-hidden="true"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/" class="SoMe-footer" aria-label="Go to our Instagram">
-                            <i class="fa fa-instagram" aria-hidden="true"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://no.linkedin.com/" class="SoMe-footer" aria-label="Go to our LinkedIn">
-                            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-                        </a>
-                    </li>
-                </ul>
+                <nav>
+                    <ul class="SoMe-footer-liste" role="navigation">
+                        <li>
+                            <a href="https://www.facebook.com/" class="SoMe-footer" aria-label="Go to our Facebook">
+                                <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/" class="SoMe-footer" aria-label="Go to our Instagram">
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://no.linkedin.com/" class="SoMe-footer" aria-label="Go to our LinkedIn">
+                                <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
             </section>
         </footer>
     </div>
