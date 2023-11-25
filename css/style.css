@@ -543,7 +543,7 @@ link: https://www.youtube.com/watch?v=lRPguPbovro
 
 .getintouch-btn{
     background-color: var(--gullgul);
-    color: var(--gråsvart);
+    color: black;
     font-weight: 700;
     font-size: 20px;
     text-decoration: none;
@@ -635,7 +635,7 @@ link: https://www.youtube.com/watch?v=lRPguPbovro
     font-size: 15px;
     font-weight: 700;
     background-color: var(--gullgul);
-    color: var(--gråsvart);
+    color: black;
 }
 
 .contactinfo{
@@ -970,6 +970,7 @@ link: https://www.youtube.com/watch?v=lRPguPbovro
     .job-btn:hover{
         background-color: var(--gråsvart);
         color: var(--gullgul);
+        border: 2px solid var(--gråsvart);
     }
 
     /* Løsning for artikkelkortenes flex-grow og rad-oppførsel er utarbeidet med hjelp av ChatGPT */
@@ -1124,6 +1125,7 @@ link: https://www.youtube.com/watch?v=lRPguPbovro
     #company-btn:hover{
         background-color: var(--gråsvart);
         color: var(--gullgul);
+        border: 3px solid var(--gråsvart);
     }
 
     .ourservices{
