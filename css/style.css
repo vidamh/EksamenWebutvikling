@@ -274,7 +274,7 @@ link: https://www.youtube.com/watch?v=lRPguPbovro
 }
 
 .artikkelkort h3{
-    font-size: 19px;
+    font-size: 22px;
 }
 
 
@@ -431,17 +431,17 @@ link: https://www.youtube.com/watch?v=lRPguPbovro
 }
 
 .serviceh3{
-    font-size: 25px;
+    font-size: 20px;
     padding: 4vw 0px;
 }
 
 .serviceh4{
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
 }
 
 .servicekort i{
-    font-size: 13.333vw;
+    font-size: 40px;
     padding-top: 2.667vw;
 }
 
@@ -507,7 +507,7 @@ link: https://www.youtube.com/watch?v=lRPguPbovro
     position: relative;
     isolation: isolate;
     padding: 50px 40px;
-    width: 70%;
+    width: 60%;
 }
 
 .companyarticle::after{
@@ -541,13 +541,19 @@ link: https://www.youtube.com/watch?v=lRPguPbovro
     margin-bottom: 20px;
 }
 
+
+/* Bruker flex for at teksten skal kunne wrappe seg under */
 .getintouch-btn{
     background-color: var(--gullgul);
     color: black;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 18px;
     text-decoration: none;
     padding: 15px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: fit-content;
 }
 
 #clients{
@@ -613,6 +619,7 @@ link: https://www.youtube.com/watch?v=lRPguPbovro
 
 .mailh3{
     padding-bottom: 10px;
+    font-size: 20px;
 }
 
 .labelsmail{
@@ -641,13 +648,13 @@ link: https://www.youtube.com/watch?v=lRPguPbovro
     padding: 40px 0px;
 }
 
-.contacth2{
-    font-size: 25px;
+.contacth3{
+    font-size: 20px;
     font-weight: 700;
     padding-bottom: 20px;
 }
 
-.contacth3{
+.contacth4{
     font-size: 15px;
     font-weight: 500;
 }
@@ -668,8 +675,9 @@ link: https://www.youtube.com/watch?v=lRPguPbovro
 
 .contactikon-li i{
     color: #4a494a;
-    font-size: 25px;
-    padding-right: 10px;
+    font-size: 30px;
+    width: 30px;
+    padding-right: 20px;
 }
 
 .contacth4{
@@ -799,6 +807,44 @@ link: https://www.youtube.com/watch?v=lRPguPbovro
 
     .signuph2{
         font-size: 30px;
+    }
+
+    /* About */
+
+    .wrapper-mail-contactinfo{
+        width: 80%;
+    }
+
+    .aboutcompanyh1{
+        font-size: 25px;
+    }
+
+    .aboutcompanyp{
+        font-size: 16px;
+    }
+
+    .aboutcompanyh2{
+        font-size: 16px;
+    }
+
+    .getintouch-btn{
+        font-size: 20px;
+    }
+
+    .clienth2{
+        font-size: 30px;
+    }
+
+    .contactush2{
+        font-size: 30px;
+    }
+
+    .mailh3{
+        font-size: 25px;
+    }
+
+    .contacth3{
+        font-size: 25px;
     }
 
 }
@@ -1001,7 +1047,7 @@ link: https://www.youtube.com/watch?v=lRPguPbovro
     }
 
     .artikkelkort h3{
-        font-size: 30px;
+        font-size: 25px;
     }
 
 
@@ -1243,6 +1289,7 @@ link: https://www.youtube.com/watch?v=lRPguPbovro
         display: flex;
         flex-direction: row;
         padding: 40px 0px 20px 0px;
+        width: 90%;
     }
 
     .mail{
@@ -1250,7 +1297,7 @@ link: https://www.youtube.com/watch?v=lRPguPbovro
     }
 
     .mailh3{
-        font-size: 20px;
+        font-size: 25px;
     }
 
     .sendmessage-btn:hover{
@@ -1258,8 +1305,20 @@ link: https://www.youtube.com/watch?v=lRPguPbovro
         color: var(--gullgul);
     }
 
-    .contacth2{
-        font-size: 20px;
+    .contacth3{
+        font-size: 25px;
+    }
+
+    .contacth4{
+        font-size: 17px;
+    }
+
+    .contactikon-li i{
+        font-size: 32px;
+    }
+
+    .labelsmail{
+        font-size: 17px;
     }
 
     .contactinfo{
@@ -1306,6 +1365,51 @@ link: https://www.youtube.com/watch?v=lRPguPbovro
         max-width: 692px;
     }
 
+    .artikkelkort h3{
+        font-size: 27px;
+    }
+
+    /* About */
+
+    .aboutcompanyp{
+        font-size: 20px;
+    }
+
+    .aboutcompanyh1{
+        font-size: 30px;
+    }
+
+    .aboutcompanyh2{
+        font-size: 20px;
+    }
+
+    .getintouch-btn{
+        font-size: 20px;
+    }
+
+    .wrapper-mail-contactinfo{
+        width: 85%;
+    }
+
+    .mailh3{
+        font-size: 25px;
+    }
+
+    .contacth3{
+        font-size: 25px;
+    }
+
+    .contacth4{
+        font-size: 18px;
+    }
+
+    .labelsmail{
+        font-size: 18px;
+    }
+
+    .contactikon-li i{
+        padding-right: 30px;
+    }
 
 }
 
