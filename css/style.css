@@ -136,7 +136,7 @@
 
 .footer-h2{
     font-size: 15px;
-    font-weight: 400;
+    font-weight: 300;
     color: white;
     padding-bottom: 20px;
 }
@@ -901,6 +901,7 @@ link: https://www.youtube.com/watch?v=lRPguPbovro
     .companyfootercontainer{
         display: flex;
         justify-content: space-between;
+        flex-direction: row;
         align-items: center;
     }
     
@@ -915,9 +916,8 @@ link: https://www.youtube.com/watch?v=lRPguPbovro
     }
     
     .footer-h2{
-        font-size: 20px;
-        font-weight: 300;
-        color: white;
+        font-size: 18px;
+        padding: 0px 10px;
     }
     
     .SoMe-footer{
