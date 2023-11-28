@@ -33,7 +33,7 @@
     <!-- Style.css link slutt-->
     <title>ILOCREAM PLEAM portfolio - see our previous jobs here!</title>
 </head>
-<body>
+<body itemscope itemtype="http://schema.org/WebPage">
     <div class="grid-container">
         <header class="navmeny" role="banner">
             <a href="#mainindex" class="skip" aria-label="Skip to main content">Skip to main content</a>
@@ -98,7 +98,7 @@
                 </section>
             </nav>
         </header>
-        <main class="main" id="mainportfolio">
+        <main class="main" id="mainportfolio" itemscope itemprop="mainContentOfPage">
             <section class="portfolioheader">
                 <h1 class="portfolioh1">Portfolio</h1>
             </section>
@@ -118,26 +118,26 @@
             </section>
             <section id="branding">
                 <h2 class="portfolioheading">Branding</h2>
-                <ul class="artikkelliste">
-                    <li>
+                <ul class="artikkelliste" itemscope itemtype="https://schema.org/ItemList">
+                    <li itemprop="itemListElement">
                         <article itemscope itemtype="http://schema.org/Article" class="artikkelkort">
                             <img itemprop="image" src="img/400x400.png" alt="Placeholder image" aria-label="Placeholder image">
                             <h3 itemprop="headline">Et harum quidem</h3>
                         </article>
                     </li>
-                    <li>
+                    <li itemprop="itemListElement">
                         <article itemscope itemtype="http://schema.org/Article" class="artikkelkort">
                             <img itemprop="image" src="img/400x400.png" alt="Placeholder image" aria-label="Placeholder image">
                             <h3 itemprop="headline">Et harum quidem</h3>
                         </article>
                     </li>
-                    <li>
+                    <li itemprop="itemListElement">
                         <article itemscope itemtype="http://schema.org/Article" class="artikkelkort">
                             <img itemprop="image" src="img/400x400.png" alt="Placeholder image" aria-label="Placeholder image">
                             <h3 itemprop="headline">Et harum quidem</h3>
                         </article>
                     </li>
-                    <li>
+                    <li itemprop="itemListElement">
                         <article itemscope itemtype="http://schema.org/Article" class="artikkelkort">
                             <img itemprop="image" src="img/400x400.png" alt="Placeholder image" aria-label="Placeholder image">
                             <h3 itemprop="headline">Et harum quidem</h3>
@@ -147,20 +147,20 @@
             </section>
             <section id="design">
                 <h2 class="portfolioheading">Design</h2>
-                <ul class="artikkelliste">
-                    <li>
+                <ul class="artikkelliste" itemscope itemtype="https://schema.org/ItemList">
+                    <li itemprop="itemListElement">
                         <article itemscope itemtype="http://schema.org/Article" class="artikkelkort">
                             <img itemprop="image" src="img/400x400.png" alt="Placeholder image" aria-label="Placeholder image">
                             <h3 itemprop="headline">Et harum quidem</h3>
                         </article>
                     </li>
-                    <li>
+                    <li itemprop="itemListElement">
                         <article itemscope itemtype="http://schema.org/Article" class="artikkelkort">
                             <img itemprop="image" src="img/400x400.png" alt="Placeholder image" aria-label="Placeholder image">
                             <h3 itemprop="headline">Et harum quidem</h3>
                         </article>
                     </li>
-                    <li>
+                    <li itemprop="itemListElement">
                         <article itemscope itemtype="http://schema.org/Article" class="artikkelkort">
                             <img itemprop="image" src="img/400x400.png" alt="Placeholder image" aria-label="Placeholder image">
                             <h3 itemprop="headline">Et harum quidem</h3>
@@ -170,14 +170,14 @@
             </section>
             <section id="development">
                 <h2 class="portfolioheading">Development</h2>
-                <ul class="artikkelliste" id="developmentkortliste">
-                    <li>
+                <ul class="artikkelliste" id="developmentkortliste" itemscope itemtype="https://schema.org/ItemList">
+                    <li itemprop="itemListElement">
                         <article itemscope itemtype="http://schema.org/Article" class="artikkelkort">
                             <img itemprop="image" src="img/400x400.png" alt="Placeholder image" aria-label="Placeholder image">
                             <h3 itemprop="headline">Et harum quidem</h3>
                         </article>
                     </li>
-                    <li>
+                    <li itemprop="itemListElement">
                         <article itemscope itemtype="http://schema.org/Article" class="artikkelkort">
                             <img itemprop="image" src="img/400x400.png" alt="Placeholder image" aria-label="Placeholder image">
                             <h3 itemprop="headline">Et harum quidem</h3>
@@ -189,25 +189,30 @@
                 <i class="fa fa-arrow-up" aria-hidden="true" aria-label="Click to go back to top"></i>
             </a>
         </main>
-        <footer class="companyfooter" role="contentinfo">
+        <footer class="companyfooter" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
             <section class="companyfootercontainer">
                 <div class="logocontainerfooter">
                     <img src="img/logo1.png" alt="Company logo" class="logofooter" aria-label="Company logo">
                 </div>
-                <h2 class="footer-h2">Companyrights Companyname 2023</h2>
+                <h2 class="footer-h2">Companyrights 
+                    <span itemprop="copyrightHolder">
+                        Companyname
+                    </span> 
+                    <span itemprop="copyrightYear">2023</span>
+                </h2>
                 <nav>
-                    <ul class="SoMe-footer-liste">
-                        <li>
+                    <ul class="SoMe-footer-liste" itemscope itemtype="https://schema.org/ItemList">
+                        <li itemprop="itemListElement">
                             <a href="https://www.facebook.com/" class="SoMe-footer" aria-label="Go to our Facebook">
                                 <i class="fa fa-facebook-official" aria-hidden="true"></i>
                             </a>
                         </li>
-                        <li>
+                        <li itemprop="itemListElement">
                             <a href="https://www.instagram.com/" class="SoMe-footer" aria-label="Go to our Instagram">
                                 <i class="fa fa-instagram" aria-hidden="true"></i>
                             </a>
                         </li>
-                        <li>
+                        <li itemprop="itemListElement">
                             <a href="https://no.linkedin.com/" class="SoMe-footer" aria-label="Go to our LinkedIn">
                                 <i class="fa fa-linkedin-square" aria-hidden="true"></i>
                             </a>

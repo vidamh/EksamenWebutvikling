@@ -33,7 +33,7 @@
     <!-- Style.css link slutt-->
     <title>ILOCREAM PLEAM - Welcome to our home page!</title>
 </head>
-<body>
+<body itemscope itemtype="http://schema.org/WebPage">
     <div class="grid-container">
         <header class="navmeny" role="banner">
             <a href="#mainindex" class="skip" aria-label="Skip to main content">Skip to main content</a>
@@ -98,7 +98,7 @@
                 </section>
             </nav>
         </header>
-        <main class="main" id="mainindex">
+        <main class="main" id="mainindex" itemscope itemprop="mainContentOfPage">
             <section id="read-more-services">
                 <div class="overlayvideo">
                     <video autoplay muted loop class="desktopvideo" aria-label="Background video">
@@ -111,7 +111,7 @@
                     Nulla facilisi. Nullam sed enim lectus. Fusce eget dolor vel ex feugiat dapibus.
                     Donec et laoreet dui, id interdum tortor. 
                 </h2>
-                <a href="#ourservices" class="yellow-btn" id="service-btn">Read more about our services</a>
+                <a href="#ourserviceshome" class="yellow-btn" id="service-btn">Read more about our services</a>
             </section>
             <section id="engaging">
                 <h2 class="engagingh2">Engaging subheading.<br> What can you help your visitors with</h2>
@@ -138,31 +138,31 @@
                     </div>
                 </article>
             </section>
-            <section class="ourservices">
+            <section class="ourservices" id="ourserviceshome">
                 <h2 class="servicesh2">Our services</h2>
-                <ul class="serviceslist">
-                    <li>
+                <ul class="serviceslist" itemscope itemtype="https://schema.org/ItemList">
+                    <li itemprop="itemListElement">
                         <article class="servicekort" itemscope itemtype="http://schema.org/Article">
                             <i class="fa fa-users" aria-hidden="true" aria-label="Icon for service"></i>
                             <h3 class="serviceh3" itemprop="headline">Branding</h3>
                             <h4 class="serviceh4" itemprop="articleBody">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
                         </article>
                     </li>
-                    <li>
+                    <li itemprop="itemListElement">
                         <article class="servicekort" itemscope itemtype="http://schema.org/Article">
                             <i class="fa fa-cloud-upload" aria-hidden="true" aria-label="Icon for service"></i>
                             <h3 class="serviceh3" itemprop="headline">Branding</h3>
                             <h4 class="serviceh4" itemprop="articleBody">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
                         </article>
                     </li>
-                    <li>
+                    <li itemprop="itemListElement">
                         <article class="servicekort" itemscope itemtype="http://schema.org/Article">
                             <i class="fa fa-code" aria-hidden="true"></i>
                             <h3 class="serviceh3" itemprop="headline">Branding</h3>
                             <h4 class="serviceh4" itemprop="articleBody">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
                         </article>
                     </li>
-                    <li>
+                    <li itemprop="itemListElement">
                         <article class="servicekort" itemscope itemtype="http://schema.org/Article">
                             <i class="fa fa-wifi" aria-hidden="true" aria-label="Icon for service"></i>
                             <h3 class="serviceh3" itemprop="headline">Branding</h3>
@@ -184,25 +184,30 @@
                 <i class="fa fa-arrow-up" aria-hidden="true" aria-label="Click to go back to top"></i>
             </a>
         </main>
-        <footer class="companyfooter" role="contentinfo">
+        <footer class="companyfooter" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
             <section class="companyfootercontainer">
                 <div class="logocontainerfooter">
                     <img src="img/logo1.png" alt="Company logo" class="logofooter" aria-label="Company logo">
                 </div>
-                <h2 class="footer-h2">Companyrights Companyname 2023</h2>
+                <h2 class="footer-h2">Companyrights 
+                    <span itemprop="copyrightHolder">
+                        Companyname
+                    </span> 
+                    <span itemprop="copyrightYear">2023</span>
+                </h2>
                 <nav>
-                    <ul class="SoMe-footer-liste">
-                        <li>
+                    <ul class="SoMe-footer-liste" itemscope itemtype="https://schema.org/ItemList">
+                        <li itemprop="itemListElement">
                             <a href="https://www.facebook.com/" class="SoMe-footer" aria-label="Go to our Facebook">
                                 <i class="fa fa-facebook-official" aria-hidden="true"></i>
                             </a>
                         </li>
-                        <li>
+                        <li itemprop="itemListElement">
                             <a href="https://www.instagram.com/" class="SoMe-footer" aria-label="Go to our Instagram">
                                 <i class="fa fa-instagram" aria-hidden="true"></i>
                             </a>
                         </li>
-                        <li>
+                        <li itemprop="itemListElement">
                             <a href="https://no.linkedin.com/" class="SoMe-footer" aria-label="Go to our LinkedIn">
                                 <i class="fa fa-linkedin-square" aria-hidden="true"></i>
                             </a>

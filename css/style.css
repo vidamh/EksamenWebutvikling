@@ -579,6 +579,7 @@ link: https://www.youtube.com/watch?v=lRPguPbovro
 .clientli{
     display: inline-block;
     padding: 10px 20px;
+    width: 140px;
 }
 
 
@@ -1274,6 +1275,10 @@ link: https://www.youtube.com/watch?v=lRPguPbovro
 
     .clienth2{
         font-size: 35px;
+    }
+
+    .clientli{
+        width: 150px;
     }
 
     #contactus{
