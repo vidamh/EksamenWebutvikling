@@ -131,11 +131,11 @@
 }
 
 .logofooter{
-    width: 21.333vw;
+    width: 90px;
 }
 
 .footer-h2{
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 300;
     color: white;
     padding-bottom: 20px;
@@ -317,6 +317,13 @@ link: https://www.youtube.com/watch?v=lRPguPbovro
     opacity: 0.5;
 }
 
+.article-services-index{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 
 .readmoreh1{
     font-size: 30px;
@@ -345,6 +352,13 @@ link: https://www.youtube.com/watch?v=lRPguPbovro
     justify-content: center;
     flex-direction: column;
     text-align: center;
+}
+
+.article-engaging{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .engagingh2{

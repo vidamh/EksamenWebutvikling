@@ -30,7 +30,7 @@
     <!-- Favicon slutt -->
     <!--- Style.css link -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <!-- Style.css link slutt-->
+    <!-- Style.css link slutt -->
     <title>ILOCREAM PLEAM - Welcome to our home page!</title>
 </head>
 <body itemscope itemtype="http://schema.org/WebPage">
@@ -42,7 +42,9 @@
                     <li class="listerekke" itemscope itemtype="http://schema.org/SiteNavigationElement">
                         <span class="logo-hjem">
                             <a href="index.html" class="logo-hjem" aria-label="Logo with Home-button functionality" itemprop="url">
-                                <img src="img/logo1.png" alt="Company logo" class="logo" aria-label="Company logo">
+                                <img src="img/logo1.png" alt="Company logo" class="logo" aria-label="Company logo"> 
+                                <!-- Jeg syntes dette bildet regnes som pynte-innhold hybrid, siden "pynten" har en funksjonalitet ved siden av pynt,
+                                altså å sende videre brukeren videre til index.html om de trykker på logoen -->
                             </a>
                         </span>
                     </li>
@@ -52,7 +54,7 @@
                         </a>
                     </li>
                     <li class="listerekke" itemscope itemtype="http://schema.org/SiteNavigationElement">
-                        <a href="portfolio.html" aria-label="Go to portfolio" itemprop="url">
+                        <a href="products.html" aria-label="Go to portfolio" itemprop="url">
                             <span itemprop="name">Portfolio</span>
                         </a>
                     </li>
@@ -71,6 +73,8 @@
                     <span class="logo-hjem" itemscope itemtype="http://schema.org/SiteNavigationElement">
                         <a href="index.html" class="logo-hjem" aria-label="Logo with Home-button functionality" itemprop="url">
                             <img src="img/logo1.png" alt="Company logo" class="logo" aria-label="Company logo">
+                            <!-- Jeg syntes dette bildet regnes som pynte-innhold, siden "pynten" har en funksjonalitet ved siden av pynt,
+                                altså å sende videre brukeren videre til index.html om de trykker på logoen -->
                         </a>
                     </span>
                     <ul class="navliste-desktop">
@@ -80,7 +84,7 @@
                             </a>
                         </li>
                         <li itemscope itemtype="http://schema.org/SiteNavigationElement">
-                            <a href="portfolio.html" aria-label="Go to portfolio" itemprop="url">
+                            <a href="products.html" aria-label="Go to portfolio" itemprop="url">
                                 <span itemprop="name">Portfolio</span>
                             </a>
                         </li>
@@ -104,28 +108,42 @@
                     <video autoplay muted loop class="desktopvideo" aria-label="Background video">
                         <source src="img/mountains.mp4" type="video/mp4">
                     </video>
+                    <!-- Jeg syntes denne videoen er pynt siden den ikke har noe funksjonalitet annet enn å se bra ut i bakgrunnen,
+                        dette kan også bli sagt om bakgrunnsbildet som erstatter videoen på mobile. Bakgrunnsbildet ligger i css som background-image.
+                        Dette syntes jeg også om de andre bakgrunnsbildene i css på html-sidene.
+                    -->
                 </div>
-                <h1 class="readmoreh1">Compelling headline</h1>
-                <h2 class="readmoreh2">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis magna neque.
-                    Nulla facilisi. Nullam sed enim lectus. Fusce eget dolor vel ex feugiat dapibus.
-                    Donec et laoreet dui, id interdum tortor. 
-                </h2>
-                <a href="#ourserviceshome" class="yellow-btn" id="service-btn">Read more about our services</a>
+                <article class="article-services-index" itemscope itemtype="http://schema.org/Article">
+                    <h1 class="readmoreh1" itemprop="headline">Compelling headline</h1>
+                    <h2 class="readmoreh2" itemprop="articleBody">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis magna neque.
+                        Nulla facilisi. Nullam sed enim lectus. Fusce eget dolor vel ex feugiat dapibus.
+                        Donec et laoreet dui, id interdum tortor. 
+                    </h2>
+                    <!--- Microdata for knapp/link lagt til med hjelp av ChatGPT !-->
+                    <a href="#ourserviceshome" class="yellow-btn" id="service-btn" itemprop="potentialAction" itemscope itemtype="http://schema.org/ReadAction">
+                        <span itemprop="name">Read more about our services</span>
+                    </a>
+                </article>
             </section>
             <section id="engaging">
-                <h2 class="engagingh2">Engaging subheading.<br> What can you help your visitors with</h2>
-                <h3 class="engagingh3">
-                    Vestibulum feugiat, leo porttitor laoreet laoreet, nisl tellus sagittis nisi,
-                    in mattis justo nulla at dolor. Nulla tellus nisl, bibendum ut pulvinar vitae,
-                    consectetur quis massa. Aenean vitae feugiat nisl. Sed sit amet pellentesque ante,
-                    et volutpat tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada
-                    fames ac turpis egestas. 
-                </h3>
+                <article class="article-engaging" itemscope itemtype="http://schema.org/Article">
+                    <h2 class="engagingh2" itemprop="headline">Engaging subheading.<br> What can you help your visitors with</h2>
+                    <h3 class="engagingh3" itemprop="articleBody">
+                        Vestibulum feugiat, leo porttitor laoreet laoreet, nisl tellus sagittis nisi,
+                        in mattis justo nulla at dolor. Nulla tellus nisl, bibendum ut pulvinar vitae,
+                        consectetur quis massa. Aenean vitae feugiat nisl. Sed sit amet pellentesque ante,
+                        et volutpat tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada
+                        fames ac turpis egestas. 
+                    </h3>
+                </article>
             </section>
             <section id="ourcompany">
                 <article class="aboutourcompany" itemscope itemtype="http://schema.org/Article">
                     <img src="img/400x400.png" alt="Placeholder image" class="bildecompany" itemprop="image" aria-label="Placeholder image">
+                    <!-- Jeg syntes dette bildet er innhold fordi det skal være et bilde relatert til selskapet/som informerer noe om selskapet,
+                        men siden jeg ikke har lagt inn noe annet enn placeholder kan det også regnes som pynt frem til et ekte bilde legges inn
+                     -->
                     <div class="companycontent">
                         <h2 class="companyh2" itemprop="headline">About our company</h2>
                         <h3 class="companyh3" itemprop="articleBody">
@@ -134,7 +152,10 @@
                             Aenean ut dictum arcu, commodo consectetur mauris. Integer placerat vestibulum eleifend. 
                             Nullam hendrerit ante tempor sapien aliquam accumsan.
                         </h3>
-                        <a href="about.html" class="readmore-btn" id="company-btn">Read more about us</a>
+                        <!--- Microdata for knapp/link lagt til med hjelp av ChatGPT !-->
+                        <a href="about.html" class="readmore-btn" id="company-btn" itemprop="potentialAction" itemscope itemtype="http://schema.org/ReadAction">
+                            <span itemprop="name">Read more about us</span>
+                        </a>
                     </div>
                 </article>
             </section>
@@ -144,6 +165,10 @@
                     <li itemprop="itemListElement">
                         <article class="servicekort" itemscope itemtype="http://schema.org/Article">
                             <i class="fa fa-users" aria-hidden="true" aria-label="Icon for service"></i>
+                            <!-- Dette ikonet er en blanding av pynt og innhold siden ikonet ikke har noe funksjonalitet, 
+                                men den er et bilde av hva slags service selskapet tilbyr, og derfor er det innhold som beskriver
+                                noe om selskapet
+                            -->
                             <h3 class="serviceh3" itemprop="headline">Branding</h3>
                             <h4 class="serviceh4" itemprop="articleBody">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
                         </article>
@@ -151,6 +176,10 @@
                     <li itemprop="itemListElement">
                         <article class="servicekort" itemscope itemtype="http://schema.org/Article">
                             <i class="fa fa-cloud-upload" aria-hidden="true" aria-label="Icon for service"></i>
+                            <!-- Dette ikonet er en blanding av pynt og innhold siden ikonet ikke har noe funksjonalitet, 
+                                men den er et bilde av hva slags service selskapet tilbyr, og derfor er det innhold som beskriver
+                                noe om selskapet
+                            -->
                             <h3 class="serviceh3" itemprop="headline">Branding</h3>
                             <h4 class="serviceh4" itemprop="articleBody">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
                         </article>
@@ -158,6 +187,10 @@
                     <li itemprop="itemListElement">
                         <article class="servicekort" itemscope itemtype="http://schema.org/Article">
                             <i class="fa fa-code" aria-hidden="true"></i>
+                            <!-- Dette ikonet er en blanding av pynt og innhold siden ikonet ikke har noe funksjonalitet, 
+                                men den er et bilde av hva slags service selskapet tilbyr, og derfor er det innhold som beskriver
+                                noe om selskapet
+                            -->
                             <h3 class="serviceh3" itemprop="headline">Branding</h3>
                             <h4 class="serviceh4" itemprop="articleBody">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
                         </article>
@@ -165,6 +198,10 @@
                     <li itemprop="itemListElement">
                         <article class="servicekort" itemscope itemtype="http://schema.org/Article">
                             <i class="fa fa-wifi" aria-hidden="true" aria-label="Icon for service"></i>
+                            <!-- Dette ikonet er en blanding av pynt og innhold siden ikonet ikke har noe funksjonalitet, 
+                                men den er et bilde av hva slags service selskapet tilbyr, og derfor er det innhold som beskriver
+                                noe om selskapet
+                            -->
                             <h3 class="serviceh3" itemprop="headline">Branding</h3>
                             <h4 class="serviceh4" itemprop="articleBody">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
                         </article>
@@ -182,34 +219,49 @@
             </section>
             <a href="#top" class="backtotop-btn" aria-label="Click to go back to top">
                 <i class="fa fa-arrow-up" aria-hidden="true" aria-label="Click to go back to top"></i>
+                <!-- Jeg syntes dette ikonet er innhold siden ikonet funker som en knapp som sender deg tilbake til toppen -->
             </a>
         </main>
         <footer class="companyfooter" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
             <section class="companyfootercontainer">
                 <div class="logocontainerfooter">
-                    <img src="img/logo1.png" alt="Company logo" class="logofooter" aria-label="Company logo">
+                    <a href="index.html" class="logofooter" aria-label="Logo with Home-button functionality">
+                        <img src="img/logo1.png" alt="Company logo" class="logofooter" aria-label="Company logo">
+                        <!-- Jeg syntes dette bildet regnes som pynte-innhold, siden "pynten" har en funksjonalitet ved siden av pynt,
+                                altså å sende videre brukeren videre til index.html om de trykker på logoen -->
+                    </a>
                 </div>
                 <h2 class="footer-h2">Companyrights 
-                    <span itemprop="copyrightHolder">
-                        Companyname
-                    </span> 
+                    <span itemprop="copyrightHolder">Companyname</span> 
                     <span itemprop="copyrightYear">2023</span>
                 </h2>
                 <nav>
-                    <ul class="SoMe-footer-liste" itemscope itemtype="https://schema.org/ItemList">
-                        <li itemprop="itemListElement">
+                    <ul class="SoMe-footer-liste">
+                        <li>
                             <a href="https://www.facebook.com/" class="SoMe-footer" aria-label="Go to our Facebook">
                                 <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                                <!-- Jeg syntes dette ikonet kan regnes som både innhold og pynt, siden ikonet sender brukeren 
+                                    videre til en annen nettside og har derfor funksjonalitet. Den er også litt pynt siden
+                                    man i teorien kunne byttet ut ikonet med en link, men dette er ikke like estetisk tilfredsstillende
+                                -->
                             </a>
                         </li>
-                        <li itemprop="itemListElement">
+                        <li>
                             <a href="https://www.instagram.com/" class="SoMe-footer" aria-label="Go to our Instagram">
                                 <i class="fa fa-instagram" aria-hidden="true"></i>
+                                 <!-- Jeg syntes dette ikonet kan regnes som både innhold og pynt, siden ikonet sender brukeren 
+                                    videre til en annen nettside og har derfor funksjonalitet. Den er også litt pynt siden
+                                    man i teorien kunne byttet ut ikonet med en link, men dette er ikke like estetisk tilfredsstillende
+                                -->
                             </a>
                         </li>
-                        <li itemprop="itemListElement">
+                        <li>
                             <a href="https://no.linkedin.com/" class="SoMe-footer" aria-label="Go to our LinkedIn">
                                 <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                                <!-- Jeg syntes dette ikonet kan regnes som både innhold og pynt, siden ikonet sender brukeren 
+                                    videre til en annen nettside og har derfor funksjonalitet. Den er også litt pynt siden
+                                    man i teorien kunne byttet ut ikonet med en link, men dette er ikke like estetisk tilfredsstillende
+                                -->
                             </a>
                         </li>
                     </ul>
